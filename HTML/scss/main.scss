@@ -1,0 +1,16 @@
+@import "normalize";
+@import "variables";
+
+body{
+	margin:0px;
+}
+.headBar{
+	background-color: $barColor;
+	width: 100%;
+	height: 45px;
+}
+.clientName{
+	background-color: $transBlack;
+	width: 50%;
+	height: 45px;
+}
