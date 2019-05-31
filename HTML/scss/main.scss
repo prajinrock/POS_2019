@@ -3,14 +3,52 @@
 
 body{
 	margin:0px;
+	font-family: $appFont;
+}
+.outerWrapper{
+	width: 100vw;
+	height: 100vh;
+	background-color: $bgColor;
 }
 .headBar{
 	background-color: $barColor;
 	width: 100%;
-	height: 45px;
+	height: 5.8%;
 }
 .clientName{
-	background-color: $transBlack;
-	width: 50%;
-	height: 45px;
+	background-color: $transBlack30;
+	min-width: 7%;
+	height: 100%;
+	max-width: 13%;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 500;
+	padding: 0px 15px;
+	align-items: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.flexBox{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+}
+.menuPin{
+	width: 3.5%;
+	height: 100%;
+	background-color: $transBlack50;
+}
+.posSelectBtnHome{
+	height: 100%;
+}
+.posBtnHome{
+	height: 100%;
+	font-size: 1rem;
+	background-color: $transBlack20;
+	border: none;
+	color: $fontColor;
+	padding: 0px 15px;
 }
