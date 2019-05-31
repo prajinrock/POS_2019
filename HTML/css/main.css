@@ -462,9 +462,10 @@ body {
   background-color: #23254a;
   width: 100%;
   height: 5.8%;
+  align-items: center;
 }
 
-/* line 18, ../scss/main.scss */
+/* line 19, ../scss/main.scss */
 .clientName {
   background-color: rgba(0, 0, 0, 0.3);
   min-width: 7%;
@@ -481,7 +482,7 @@ body {
   text-overflow: ellipsis;
 }
 
-/* line 33, ../scss/main.scss */
+/* line 34, ../scss/main.scss */
 .flexBox {
   display: flex;
   display: -webkit-flex;
@@ -489,19 +490,20 @@ body {
   display: -ms-flex;
 }
 
-/* line 39, ../scss/main.scss */
+/* line 40, ../scss/main.scss */
 .menuPin {
   width: 3.5%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 44, ../scss/main.scss */
+/* line 45, ../scss/main.scss */
 .posSelectBtnHome {
   height: 100%;
+  margin-right: auto;
 }
 
-/* line 47, ../scss/main.scss */
+/* line 49, ../scss/main.scss */
 .posBtnHome {
   height: 100%;
   font-size: 1rem;
@@ -509,4 +511,74 @@ body {
   border: none;
   color: #9597c4;
   padding: 0px 15px;
+}
+
+/* line 57, ../scss/main.scss */
+.systemTime {
+  font-family: neusa-next-std, sans-serif;
+  font-size: 14px;
+  color: #50537d;
+  border: 2px solid #2c2e56;
+  padding: 7px 10px 5px 10px;
+  border-radius: 6px;
+  margin-left: auto;
+}
+
+/* line 66, ../scss/main.scss */
+.lastBillDetails {
+  color: #50537d;
+  font-size: 14px;
+  font-family: neusa-next-std, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 72, ../scss/main.scss */
+.lastBillDetails > span {
+  padding-left: 10px;
+}
+
+/* line 75, ../scss/main.scss */
+.barCodeSearch {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* line 79, ../scss/main.scss */
+.itemSearchBox {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 83, ../scss/main.scss */
+.itemSearch {
+  width: 110px;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  outline: none;
+  color: #50537d;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all .3s;
+}
+
+/* line 94, ../scss/main.scss */
+.itemSearch:focus {
+  outline: none;
+}
+
+/* line 97, ../scss/main.scss */
+.searchBtn {
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+  padding: 0px 10px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+/* line 105, ../scss/main.scss */
+.searchBtn:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+  outline: none;
 }

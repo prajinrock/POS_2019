@@ -14,6 +14,7 @@ body{
 	background-color: $barColor;
 	width: 100%;
 	height: 5.8%;
+	align-items: center;
 }
 .clientName{
 	background-color: $transBlack30;
@@ -43,6 +44,7 @@ body{
 }
 .posSelectBtnHome{
 	height: 100%;
+	margin-right: auto;
 }
 .posBtnHome{
 	height: 100%;
@@ -51,4 +53,56 @@ body{
 	border: none;
 	color: $fontColor;
 	padding: 0px 15px;
+}
+.systemTime{
+	font-family: $appFont;
+	font-size: 14px;
+	color: $fontColorLite;
+	border: 2px solid #2c2e56;
+	padding: 7px 10px 5px 10px;
+	border-radius: 6px;
+	margin-left: auto;
+}
+.lastBillDetails{
+	color: $fontColorLite;
+	font-size: 14px;
+	font-family: $appFont;
+	text-transform: uppercase;
+}
+.lastBillDetails > span{
+	padding-left:10px;
+}
+.barCodeSearch{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.itemSearchBox{
+	height: 100%;
+	background-color: $transBlack20;
+}
+.itemSearch{
+	width: 110px;
+	background-color: transparent;
+	border: none;
+	height: 100%;
+	outline: none;
+	color: $fontColorLite;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: all .3s;
+}
+.itemSearch:focus{
+	outline: none;
+}
+.searchBtn{
+	background-color: transparent;
+	border: none;
+	line-height: 0;
+	padding: 0px 10px;
+	transition: all .3s;
+	cursor: pointer;
+}
+.searchBtn:focus{
+	background-color: $transBlack50;
+	outline: none;
 }
