@@ -4,11 +4,13 @@
 body{
 	margin:0px;
 	font-family: $appFont;
+	background-color: $mainBG;
 }
 .outerWrapper{
 	width: 100vw;
 	height: 100vh;
-	background-color: $bgColor;
+	// background-color: $bgColor;
+	flex-direction: column;
 }
 .headBar{
 	background-color: $barColor;
@@ -105,4 +107,72 @@ body{
 .searchBtn:focus{
 	background-color: $transBlack50;
 	outline: none;
+}
+.userPhoto{
+	width: 26px;
+	height: 26px;
+	border-radius: 15px;
+	overflow: hidden;
+	border: 2px solid $transBlack50;
+	margin-left: 10px;
+}
+.userPhoto > img{
+	width: 100%;
+}
+.userArea{
+	height: 100%;
+	align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	cursor: pointer;
+	position: relative;
+	transition: all .3s;
+}
+.userArea:hover{
+	background-color: rgba(255,255,255,.1);
+}
+.userName{
+	padding-top: 3px;
+	color: #fff;
+	font-size: 14px;
+}
+.userMenu{
+	background-color: $menuColor;
+	position: absolute;
+	color: #fff;
+	top: 100%;
+	right: 0px;
+	display: none;
+}
+.userMenu ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.userMenu ul li{
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 15px 45px 15px 25px;
+	white-space: nowrap;
+	border-top:1px solid $transBlack50;
+	border-left: 2px solid $transWhite20;
+	transition: all .3s;
+}
+.userMenu ul li:hover{
+	background-color: $transWhite20;
+}
+.mainContentArea{
+	width: 100%;
+	height: 80vh;
+}
+.billPreviewSection{
+	background-color: #fff;
+}
+.itemSection{
+	// background-color: #000;
+}
+.bottomBar{
+	width: 100%;
+	height: 14.2%;
+	background-color: #333;
 }

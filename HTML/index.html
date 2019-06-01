@@ -5,22 +5,33 @@
   <meta charset="utf-8">
   <title>Quiq POS</title>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.typekit.net/mwk5lcm.css">
+  <link rel="stylesheet" href="https://use.typekit.net/mwk5lcm.css"><!--ADOBE FONTS-->
   <link rel="stylesheet" href="css/temporary_custom.css">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-resizable.js"></script>
   <script type="text/javascript">
   	$(document).ready(function(){
 	  $(".itemSearch").focus(function(){
 	    $(".systemTime, .lastBillDetails").hide();
 	    $(".itemSearch").css("width","260px");
 	  });
-	  $("#show").click(function(){
-	    $("p").show();
+	  $("#userClick").click(function(){
+	    $(".userMenu").toggle();
 	  });
+	  $(".panel-left").resizable({
+	   handleSelector: ".splitter",
+	   resizeHeight: false
+	 });
+
+	 $(".panel-top").resizable({
+	   handleSelector: ".splitter-horizontal",
+	   resizeWidth: false
+	 });
 	});
+	 
   </script>
 </head>
 
@@ -37,7 +48,7 @@
 				<span>Amount: 1267.00</span>
 			</div>
 			<div class="barCodeSearch">
-				<label class="container">Search By Barcode
+				<label class="checkcontainer">Search By Barcode
 				  <input type="checkbox">
 				  <span class="checkmark"></span>
 				</label>
@@ -46,8 +57,38 @@
 				<input type="text" name="" class="itemSearch" placeholder="Item Search">
 				<button class="searchBtn"><img src="images/magnifier.png"></button>
 			</div>
+			<div class="userArea flexBox" id="userClick">
+				<div class="userName">JOHN SMITH</div>
+				<div class="userPhoto"><img src="images/userPhoto.jpg"></div>
+				<div class="userMenu">
+					<ul>
+						<li>Profile</li>
+						<li>Reports</li>
+						<li>Theme</li>
+						<li>Settings</li>
+						<li>Masters</li>
+						<li>Shift Close</li>
+						<li>Logout</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div class="mainContentArea"></div>
+		<div class="mainContentArea flexBox">
+			<div class="panel-container">
+	            <div class="panel-left billPreviewSection">
+	                left panel
+	            </div>
+	            <div class="splitter">
+	            </div>
+	            <div class="panel-right itemSection">
+	                right panel
+	            </div>
+	        </div>
+			<!-- <div class="billPreviewSection">
+				
+			</div>
+			<div class="itemSection">sdsd</div> -->
+		</div>
 		<div class="bottomBar"></div>
 	</div>
 </body>
