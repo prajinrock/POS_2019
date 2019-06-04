@@ -454,16 +454,23 @@ body {
 /* line 9, ../scss/main.scss */
 * {
   box-sizing: border-box;
+  font-family: neusa-next-std, sans-serif;
 }
 
-/* line 12, ../scss/main.scss */
+/* line 13, ../scss/main.scss */
+button, button:hover, button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+/* line 17, ../scss/main.scss */
 .outerWrapper {
   width: 100vw;
   height: 100vh;
   flex-direction: column;
 }
 
-/* line 18, ../scss/main.scss */
+/* line 23, ../scss/main.scss */
 .headBar {
   background-color: #23254a;
   width: 100%;
@@ -471,7 +478,7 @@ body {
   align-items: center;
 }
 
-/* line 24, ../scss/main.scss */
+/* line 29, ../scss/main.scss */
 .clientName {
   background-color: rgba(0, 0, 0, 0.3);
   min-width: 7%;
@@ -488,7 +495,7 @@ body {
   text-overflow: ellipsis;
 }
 
-/* line 39, ../scss/main.scss */
+/* line 44, ../scss/main.scss */
 .flexBox {
   display: flex;
   display: -webkit-flex;
@@ -496,20 +503,20 @@ body {
   display: -ms-flex;
 }
 
-/* line 45, ../scss/main.scss */
+/* line 50, ../scss/main.scss */
 .menuPin {
   width: 3.5%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 50, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 .posSelectBtnHome {
   height: 100%;
   margin-right: auto;
 }
 
-/* line 54, ../scss/main.scss */
+/* line 59, ../scss/main.scss */
 .posBtnHome {
   height: 100%;
   font-size: 1rem;
@@ -519,7 +526,7 @@ body {
   padding: 0px 15px;
 }
 
-/* line 62, ../scss/main.scss */
+/* line 67, ../scss/main.scss */
 .systemTime {
   font-family: neusa-next-std, sans-serif;
   font-size: 14px;
@@ -530,7 +537,7 @@ body {
   margin-left: auto;
 }
 
-/* line 71, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 .lastBillDetails {
   color: #50537d;
   font-size: 14px;
@@ -538,24 +545,24 @@ body {
   text-transform: uppercase;
 }
 
-/* line 77, ../scss/main.scss */
+/* line 82, ../scss/main.scss */
 .lastBillDetails > span {
   padding-left: 10px;
 }
 
-/* line 80, ../scss/main.scss */
+/* line 85, ../scss/main.scss */
 .barCodeSearch {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 84, ../scss/main.scss */
+/* line 89, ../scss/main.scss */
 .itemSearchBox {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 88, ../scss/main.scss */
+/* line 93, ../scss/main.scss */
 .itemSearch {
   width: 110px;
   background-color: transparent;
@@ -568,12 +575,12 @@ body {
   transition: all .3s;
 }
 
-/* line 99, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 .itemSearch:focus {
   outline: none;
 }
 
-/* line 102, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 .searchBtn {
   background-color: transparent;
   border: none;
@@ -583,13 +590,13 @@ body {
   cursor: pointer;
 }
 
-/* line 110, ../scss/main.scss */
+/* line 115, ../scss/main.scss */
 .searchBtn:focus {
   background-color: rgba(0, 0, 0, 0.5);
   outline: none;
 }
 
-/* line 114, ../scss/main.scss */
+/* line 119, ../scss/main.scss */
 .userPhoto {
   width: 26px;
   height: 26px;
@@ -599,12 +606,12 @@ body {
   margin-left: 10px;
 }
 
-/* line 122, ../scss/main.scss */
+/* line 127, ../scss/main.scss */
 .userPhoto > img {
   width: 100%;
 }
 
-/* line 125, ../scss/main.scss */
+/* line 130, ../scss/main.scss */
 .userArea {
   height: 100%;
   align-items: center;
@@ -615,19 +622,19 @@ body {
   transition: all .3s;
 }
 
-/* line 134, ../scss/main.scss */
+/* line 139, ../scss/main.scss */
 .userArea:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 137, ../scss/main.scss */
+/* line 142, ../scss/main.scss */
 .userName {
   padding-top: 3px;
   color: #fff;
   font-size: 14px;
 }
 
-/* line 142, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 .userMenu {
   background-color: #1e1f3e;
   position: absolute;
@@ -635,16 +642,17 @@ body {
   top: 100%;
   right: 0px;
   display: none;
+  z-index: 99;
 }
 
-/* line 150, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 .userMenu ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
-/* line 155, ../scss/main.scss */
+/* line 161, ../scss/main.scss */
 .userMenu ul li {
   font-size: 15px;
   text-transform: uppercase;
@@ -655,42 +663,41 @@ body {
   transition: all .3s;
 }
 
-/* line 164, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 .userMenu ul li:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* line 167, ../scss/main.scss */
+/* line 173, ../scss/main.scss */
 .mainContentArea {
   width: 100%;
   height: 80vh;
 }
 
-/* line 171, ../scss/main.scss */
+/* line 177, ../scss/main.scss */
 .billPreviewSection {
   background-color: #fff;
 }
 
-/* line 177, ../scss/main.scss */
+/* line 183, ../scss/main.scss */
 .bottomBar {
   width: 100%;
   height: 14.2%;
-  background-color: #333;
 }
 
-/* line 182, ../scss/main.scss */
+/* line 188, ../scss/main.scss */
 .categorySection {
   width: 100%;
 }
 
-/* line 185, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 .mainCategory {
   width: 100%;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-/* line 190, ../scss/main.scss */
+/* line 196, ../scss/main.scss */
 .Catbutton {
   border: 2px solid #767ab5;
   background-color: transparent;
@@ -698,20 +705,28 @@ body {
   border-radius: 20px;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 8px 15px;
+  padding: 8px 15px 6px 15px;
   margin-right: 6px;
   margin-bottom: 15px;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: all .3s;
 }
 
-/* line 202, ../scss/main.scss */
+/* line 210, ../scss/main.scss */
+.Catbutton:hover {
+  background-color: #767ab5;
+  color: #fff;
+}
+
+/* line 214, ../scss/main.scss */
 .subCategory {
   width: 100%;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
-/* line 207, ../scss/main.scss */
+/* line 219, ../scss/main.scss */
 .subCatItem {
   width: 96px;
   height: 96px;
@@ -719,34 +734,35 @@ body {
   color: #fff;
   padding: 10px;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
-/* line 215, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 .subColor1 {
   background-color: #1bb790;
 }
 
-/* line 218, ../scss/main.scss */
+/* line 231, ../scss/main.scss */
 .subColor2 {
   background-color: #f94d3d;
 }
 
-/* line 221, ../scss/main.scss */
+/* line 234, ../scss/main.scss */
 .subColor3 {
   background-color: #2ac1f3;
 }
 
-/* line 224, ../scss/main.scss */
+/* line 237, ../scss/main.scss */
 .subColor4 {
   background-color: #ec463a;
 }
 
-/* line 227, ../scss/main.scss */
+/* line 240, ../scss/main.scss */
 .subColor5 {
   background-color: #ff8c48;
 }
 
-/* line 230, ../scss/main.scss */
+/* line 243, ../scss/main.scss */
 .subCatName {
   font-size: 16px;
   width: 100%;
@@ -756,7 +772,7 @@ body {
   margin-top: 30px;
 }
 
-/* line 238, ../scss/main.scss */
+/* line 251, ../scss/main.scss */
 .subCatCount {
   font-size: 13px;
   margin-top: 10px;
@@ -766,12 +782,182 @@ body {
   text-overflow: ellipsis;
 }
 
-/* line 246, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 .itemSection {
   padding: 20px;
 }
 
-/* line 249, ../scss/main.scss */
+/* line 262, ../scss/main.scss */
 .viewControl {
   height: 24px;
+  width: 100%;
+  margin-top: -35px;
+  position: relative;
+}
+
+/* line 268, ../scss/main.scss */
+.viewControl {
+  border-bottom: 1px solid #33355d;
+  text-align: right;
+}
+
+/* line 272, ../scss/main.scss */
+.viewControl .fa {
+  font-size: 19px;
+  color: #767ab5;
+  padding-left: 10px;
+  transition: all .3s;
+}
+
+/* line 278, ../scss/main.scss */
+.viewControl .fa:hover {
+  color: #1bb790;
+}
+
+/* line 281, ../scss/main.scss */
+.previewButtons {
+  width: 32%;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+/* line 288, ../scss/main.scss */
+.clubbedBtn {
+  width: 30%;
+  border-radius: 5px;
+  height: 70px;
+  flex-direction: column;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* line 296, ../scss/main.scss */
+.clubbedBtn > button {
+  height: 50%;
+  border: none;
+  color: #fff;
+}
+
+/* line 301, ../scss/main.scss */
+.clubbedBtn > button:nth-child(1) {
+  border-radius: 5px 5px 0px 0px;
+}
+
+/* line 304, ../scss/main.scss */
+.clubbedBtn > button:nth-child(2) {
+  border-radius: 0px 0px 5px 5px;
+}
+
+/* line 307, ../scss/main.scss */
+.clubbedBtn:nth-child(1) > button:nth-child(1) {
+  background-color: #2ac1f3;
+}
+
+/* line 310, ../scss/main.scss */
+.clubbedBtn:nth-child(1) > button:nth-child(2) {
+  background-color: #1d87aa;
+}
+
+/* line 313, ../scss/main.scss */
+.clubbedBtn:nth-child(2) > button:nth-child(1) {
+  background-color: #ff8c48;
+}
+
+/* line 316, ../scss/main.scss */
+.clubbedBtn:nth-child(2) > button:nth-child(2) {
+  background-color: #b26232;
+}
+
+/* line 319, ../scss/main.scss */
+.largeBtn {
+  width: 30%;
+  height: 70px;
+}
+
+/* line 323, ../scss/main.scss */
+.largeBtn > button {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #f94d3d;
+  font-size: 14px;
+}
+
+/* line 332, ../scss/main.scss */
+.tablePreview {
+  width: 68%;
+  position: relative;
+}
+
+/* line 336, ../scss/main.scss */
+.tableItem {
+  width: 90px;
+  height: 80px;
+  background-color: #33355d;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
+  box-sizing: border-box;
+  transition: all .3s;
+}
+
+/* line 346, ../scss/main.scss */
+.tableItem:hover {
+  border: 1px solid #2ac1f3;
+}
+
+/* line 349, ../scss/main.scss */
+.tableIcon {
+  width: 56px;
+  height: 40px;
+  background-size: 100%;
+}
+
+/* line 354, ../scss/main.scss */
+.vacantItem {
+  background-image: url(../images/table_green.svg);
+}
+
+/* line 357, ../scss/main.scss */
+.occupiedItem {
+  background-image: url(../images/table_red.svg);
+}
+
+/* line 361, ../scss/main.scss */
+.settleItem {
+  background-image: url(../images/table_orange.svg);
+}
+
+/* line 364, ../scss/main.scss */
+.tableItem {
+  color: #9597c4;
+  font-size: 14px;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 372, ../scss/main.scss */
+.tableItem label {
+  padding-top: 5px;
+  display: block;
+}
+
+/* line 376, ../scss/main.scss */
+.tableDrawyer {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+/* line 383, ../scss/main.scss */
+.tableDrawyer {
+  padding: 15px;
 }
