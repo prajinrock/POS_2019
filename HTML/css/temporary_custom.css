@@ -101,10 +101,14 @@
 
 .splitter {
   flex: 0 0 auto;
-  width: 1%;  
+  width: .7%;  
   /*background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/vsizegrip.png) center center no-repeat #535353;*/
   min-height: 200px;
-  cursor: col-resize;  
+  cursor: col-resize;
+  background-image: url(../images/splitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #40426f;
 }
 
 .panel-right {

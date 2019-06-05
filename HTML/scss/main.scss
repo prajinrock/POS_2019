@@ -22,17 +22,18 @@ button, button:hover, button:focus{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: $barColor; 
+  background: $transBlack20; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $fontColorLite; 
+  background: $transWhite20;
+  transition: all .3s;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $categoryColor;
+  background: $transWhite40;
   cursor: pointer;
 }
 //ScrollBAR
@@ -442,6 +443,7 @@ button, button:hover, button:focus{
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0px 0px 4px $transBlack30;
+	min-width: 185px;
 
 }
 .menuItem:nth-child(6n){
@@ -487,4 +489,140 @@ button, button:hover, button:focus{
 	font-size: 16px;
 	color: $whitecolor;
 	padding: 7px 10px;
+}
+.billPrevHeader{
+	width: 100%;
+	font-size: 16px;
+	font-weight: 500;
+	color: $barColor;
+	border-bottom: 1px solid #c8c9d9;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+.prevTableNum{
+	padding-right: 20px;
+}
+.prevPaxNum{
+	margin-right: auto;
+}
+.prevWaiter .fa{
+	color: $hoverGreen;
+}
+.prevWaiter{
+	
+}
+.billItem{
+	align-items: center;
+}
+.billItemName{
+	color: $bgColor;
+	font-size: 16px;
+	width: 50%;
+}
+.QtyInput, .QtyInput:focus{
+	border: 0px;
+	border-bottom: 1px solid #aeafcd;
+	background-color: transparent;
+	outline: none;
+	color: $bgColor;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	width: 45px;
+}
+.QtyBtn{
+	width: 32px;
+	height: 32px;
+	color: $fontColor;
+	border: 2px solid $fontColor;
+	background-color: transparent;
+	border-radius: 16px;
+	line-height: 0;
+	transition: all .3s;
+}
+.QtyBtn:focus{
+	color: $whitecolor;
+	background-color: $fontColor;
+}
+.billprice{
+	color: $bgColor;
+	font-size: 16px;
+	font-weight: 700;
+	width: 30%;
+	text-align: right;
+}
+.billQty{
+	width: 20%;
+	align-items: center;
+}
+.itemEditBox{
+	font-size: 13px;
+	color: $bgColor;
+	font-weight: 300;
+}
+.itemEditBox .fa{
+	font-size: 15px;
+}
+.itemEditBox span{
+	padding-right: 10px;
+}
+.unitPrice{
+	font-size: 13px;
+	color: $bgColor;
+	font-weight: 300;
+	padding-top: 10px;
+}
+.billItemContainer{
+	margin-bottom: 20px;
+}
+.billPrevItemList{
+	width: 100%;
+	height: calc(100% - 220px);
+	overflow: auto;
+}
+.billPrevDetail{
+	border-bottom: 1px solid #c8c9d9;
+	border-top: 1px solid #c8c9d9;
+	flex-wrap: wrap;
+	padding: 15px 0px;
+}
+.priceAddSpec{
+	width: 50%;
+	text-align: left;
+	color: $fontColor;
+	font-weight: 300;
+	font-size: 15px;
+	padding: 3px 0px;
+}
+.priceAdd{
+	width: 50%;
+	text-align: right;
+	color: $bgColor;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 3px 0px;
+}
+.billTotal{
+	color: $pureRed;
+	font-size: 24px;
+	font-weight: 700;
+}
+.billTotal span{
+	font-size: 16px;
+	color: $fontColor;
+	font-weight: 500;
+}
+.billSave{
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.saveBillBtn button{
+	background-color: $pureGreen;
+	padding: 15px 25px;
+	font-size: 14px;
+	color: $whitecolor;
+	border: none;
+	border-radius: 30px;
 }
