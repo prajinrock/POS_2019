@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Quiq POS</title>
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.typekit.net/mwk5lcm.css"><!-- ADOBE FONTS -->
   <link rel="stylesheet" href="css/temporary_custom.css">
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -15,31 +15,52 @@
   <script type="text/javascript" src="js/jquery-resizable.js"></script>
   <script type="text/javascript">
   	$(document).ready(function(){
-	  $(".itemSearch").focus(function(){
-	    $(".systemTime, .lastBillDetails").hide();
-	    $(".itemSearch").css("width","260px");
-	  });
-	  $("#userClick").click(function(){
-	    $(".userMenu").toggle();
-	  });
-	  $(".panel-left").resizable({
-	   handleSelector: ".splitter",
-	   resizeHeight: false
-	 });
-
-	 $(".panel-top").resizable({
-	   handleSelector: ".splitter-horizontal",
-	   resizeWidth: false
-	 });
+		$(".itemSearch").focus(function(){
+			$(".systemTime, .lastBillDetails").hide();
+			$(".itemSearch").css("width","260px");
+		});
+		$("#userClick").click(function(){
+			$(".userMenu").toggle();
+		});
+		$(".panel-left").resizable({
+			handleSelector: ".splitter",
+			resizeHeight: false
+		});
+		$(".panel-top").resizable({
+			handleSelector: ".splitter-horizontal",
+			resizeWidth: false
+		});
+		$(".drawyerBtn").click(function(){
+			$(".drawyerBtn").toggleClass('pushDown');
+			$(".tablePreview").toggleClass('tableOut', 1000);
+			$(".drawyerBtn").toggleClass('pushDown');
+		});
+		$(".menuPin").click(function(){
+			$(".menuPin").toggleClass('menuActive');
+		});
 	});
 	 
   </script>
+	<script>
+		function openCity(cityName) {
+		  var i;
+		  var x = document.getElementsByClassName("city");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  document.getElementById(cityName).style.display = "block";  
+		}
+	</script>
 </head>
 
 <body>
 	<div class="outerWrapper flexBox">
 		<div class="headBar flexBox">
-			<div class="menuPin"></div>
+			<div class="menuPin">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<div class="clientName flexBox">Elliot Hotels</div>
 			<div class="posSelectBtnHome flexBox"><button class="posBtnHome">DINE IN</button></div>
 			<div class="systemTime">11:37 AM	23/04/2019</div>
@@ -420,6 +441,137 @@
 					<div class="tableItem flexBox">
 						<div class="tableIcon occupiedItem"></div>
 						<label>Table 01</label>
+					</div>
+				</div>
+				<div class="tabbedTables">
+					<div class="tableTab">
+					  <button class="tabButton allBtn" onclick="openCity('London')">All - 13</button>
+					  <button class="tabButton vacantBtn" onclick="openCity('Paris')">Vacant - 5</button>
+					  <button class="tabButton occupBtn" onclick="openCity('Tokyo')">Occupied - 6</button>
+					  <button class="tabButton settleBtn" onclick="openCity('Japan')">Settlement - 2</button>
+					</div>
+
+					<div id="London" class="w3-container city">
+					  <div class="tableDrawyer flexBox">
+						<div class="tableItem flexBox">
+							<div class="tableIcon vacantItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon settleItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon occupiedItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon vacantItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon vacantItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon vacantItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon settleItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon vacantItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon occupiedItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon occupiedItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon occupiedItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon occupiedItem"></div>
+							<label>Table 01</label>
+						</div>
+						<div class="tableItem flexBox">
+							<div class="tableIcon occupiedItem"></div>
+							<label>Table 01</label>
+						</div>
+					</div>
+					</div>
+
+					<div id="Paris" class="w3-container city" style="display:none">
+						<div class="tableDrawyer flexBox">
+							<div class="tableItem flexBox">
+								<div class="tableIcon vacantItem"></div>
+								<label>Table 01</label>
+							</div>
+							<div class="tableItem flexBox">
+								<div class="tableIcon vacantItem"></div>
+								<label>Table 01</label>
+							</div>
+							<div class="tableItem flexBox">
+								<div class="tableIcon vacantItem"></div>
+								<label>Table 01</label>
+							</div>
+							<div class="tableItem flexBox">
+								<div class="tableIcon vacantItem"></div>
+								<label>Table 01</label>
+							</div>
+							<div class="tableItem flexBox">
+								<div class="tableIcon vacantItem"></div>
+								<label>Table 01</label>
+							</div>
+						</div>
+					</div>
+
+					<div id="Tokyo" class="w3-container city" style="display:none">
+						<div class="tableDrawyer flexBox">
+							<div class="tableItem flexBox">
+								<div class="tableIcon occupiedItem"></div>
+								<label>Table 01</label>
+							</div>
+							<div class="tableItem flexBox">
+								<div class="tableIcon occupiedItem"></div>
+								<label>Table 01</label>
+							</div>
+							<div class="tableItem flexBox">
+								<div class="tableIcon occupiedItem"></div>
+								<label>Table 01</label>
+							</div>
+							<div class="tableItem flexBox">
+								<div class="tableIcon occupiedItem"></div>
+								<label>Table 01</label>
+							</div>
+							<div class="tableItem flexBox">
+								<div class="tableIcon occupiedItem"></div>
+								<label>Table 01</label>
+							</div>
+							<div class="tableItem flexBox">
+								<div class="tableIcon occupiedItem"></div>
+								<label>Table 01</label>
+							</div>
+						</div>
+					</div>
+					<div id="Japan" class="w3-container city" style="display:none">
+					  <div class="tableDrawyer flexBox">
+							<div class="tableItem flexBox">
+								<div class="tableIcon settleItem"></div>
+								<label>Table 01</label>
+							</div>
+							<div class="tableItem flexBox">
+								<div class="tableIcon settleItem"></div>
+								<label>Table 01</label>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="drawyerBtn"></div>

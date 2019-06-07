@@ -71,9 +71,11 @@ button, button:hover, button:focus{
 	display: -ms-flex;
 }
 .menuPin{
-	width: 3.5%;
+	width: 50px;
 	height: 100%;
 	background-color: $transBlack50;
+	position: relative;
+	cursor: pointer;
 }
 .posSelectBtnHome{
 	height: 100%;
@@ -377,14 +379,17 @@ button, button:hover, button:focus{
 	box-sizing:border-box;
 	transition: all .3s;
 	margin-top: 2%;
+	cursor: pointer;
 }
 .tableItem:hover{
 	border: 1px solid #2ac1f3;
+	box-shadow: 0px 0px 10px #2ac1f3 inset;
 }
 .tableIcon{
 	width: 56px;
 	height: 40px;
 	background-size: 100%;
+	background-repeat: no-repeat;
 }
 .vacantItem{
 	background-image: url(../images/table_green.svg);
@@ -426,6 +431,9 @@ button, button:hover, button:focus{
 	top: -35px;
 	left: 45%;
 	cursor: pointer;
+}
+.drawyerBtn.pushDown{
+	background-image:url(../images/drawyer_close.png);
 }
 .itemList{
 	width: 100%;
@@ -549,11 +557,11 @@ button, button:hover, button:focus{
 	color: $bgColor;
 	font-size: 16px;
 	font-weight: 700;
-	width: 30%;
+	width: 20%;
 	text-align: right;
 }
 .billQty{
-	width: 20%;
+	width: 30%;
 	align-items: center;
 }
 .itemEditBox{
@@ -625,4 +633,148 @@ button, button:hover, button:focus{
 	color: $whitecolor;
 	border: none;
 	border-radius: 30px;
+}
+.tablePreview.tableOut{
+	width: 68%;
+    position: absolute;
+    top: 18%;
+    right: 0px;
+    background-color: $bgColor;
+    height: 82%;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+}
+.tableOut > .tableDrawyer{
+	height: auto;
+	display: none;
+}
+.tabbedTables{
+	display: none;
+	padding: 15px;
+}
+.tableOut .tabbedTables{
+	display: block;
+}
+.tableTab{
+	width: 100%;
+	background-color: $tabBG;
+}
+.tabButton{
+	padding: 15px 25px;
+	color: $fontColor;
+	background-color: transparent;
+	border: none;
+}
+.allBtn:focus{
+	box-shadow: 0px -3px 0px $transWhite20 inset;
+}
+.vacantBtn:focus{
+	box-shadow: 0px -3px 0px #2dcc70 inset;
+}
+.occupBtn:focus{
+	box-shadow: 0px -3px 0px #d25d5a inset;
+}
+.settleBtn:focus{
+	box-shadow: 0px -3px 0px #ff9811 inset;
+}
+.menuPin span{
+	width: 50%;
+	height: 2px;
+	background-color: $whitecolor;
+	display: block;
+	position: absolute;
+	left: 25%;
+}
+.menuPin span:nth-child(1){
+	top: 30%;
+}
+.menuPin span:nth-child(2){
+	top: 48%;
+}
+.menuPin span:nth-child(3){
+	top: 66%;
+}
+.menuActive{
+	background-color: $hoverGreen;
+}
+.loginWrapper{
+	width: 100%;
+	height: 100vh;
+	background-color: $menuColor;
+}
+.companyDetails{
+	width: 50%;
+	height: 100%;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.loginSection{
+	width: 50%;
+	height: 100%;
+}
+.loginSection{
+	background-color: #23254b;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.locationTitle{
+	font-size: 24px;
+	color: $whitecolor;
+	margin-bottom: 25px;
+}
+.locationHolder .fa{
+	font-size: 50px;
+	margin-bottom: 10px;
+	color: #535586;
+}
+.locationHolder img{
+	margin-bottom: 10px;
+}
+.locationHolder button{
+	width: 130px;
+	height: 130px;
+	display: block;
+	border-radius: 6px;
+	background-color: $tabBG;
+	border: none;
+	color: $whitecolor;
+	font-size: 16px;
+	box-shadow: 0px 0px 4px $transBlack30;
+	margin:10px;
+	cursor: pointer;
+}
+.locationHolder button:hover{
+	border: 1px solid #2ac1f3;
+	box-shadow: 0px 0px 10px #2ac1f3 inset;
+}
+.companyLogo{
+	width: 27%;
+}
+.companyLogo > img{
+	width: 100%;
+}
+.aboutContent{
+	width: 65%;
+	text-align: center;
+	color: #9c9fd1;
+	font-size: 15px;
+	line-height: 1.5;
+	margin-top:20px;
+}
+.companyBtn{
+	margin-top: 15px;
+}
+.companyBtn button{
+	background-color: #65678e;
+	border: none;
+	padding: 15px 25px;
+	border-radius: 30px;
+	font-size: 14px;
+	color: $whitecolor;
+}
+@media only screen and (max-width: 1366px) {
+  .menuItem:nth-child(6n){
+  	margin-right: 2%;
+  }
 }
