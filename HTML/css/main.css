@@ -1478,8 +1478,85 @@ button, button:hover, button:focus {
   color: #fff;
 }
 
+/* line 776, ../scss/main.scss */
+.loginForm {
+  width: 40%;
+}
+
+/* line 779, ../scss/main.scss */
+.mdl-textfield {
+  width: 100%;
+}
+
+/* line 782, ../scss/main.scss */
+.mdl-textfield__input {
+  border: 2px solid #4b4e7e;
+  border-radius: 6px;
+  padding: 10px;
+  color: #fff;
+  font-family: neusa-next-std, sans-serif;
+}
+
+/* line 789, ../scss/main.scss */
+.mdl-textfield__label {
+  color: #9c9fd1;
+  padding-top: 8px;
+  padding-left: 10px;
+  text-shadow: 3px 0px 0px #23254b;
+}
+
+/* line 795, ../scss/main.scss */
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+  color: #9c9fd1;
+}
+
+/* line 798, ../scss/main.scss */
+.mdl-textfield__label:after {
+  background-color: #4b4e7e;
+}
+
+/* line 801, ../scss/main.scss */
+.mdl-checkbox__label {
+  color: #9c9fd1;
+}
+
+/* line 804, ../scss/main.scss */
+.mdl-checkbox__box-outline {
+  border: 2px solid #4b4e7e;
+}
+
+/* line 807, ../scss/main.scss */
+.mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+  border: 2px solid #1bb790;
+}
+
+/* line 810, ../scss/main.scss */
+.mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+  background-color: #1bb790;
+}
+
+/* line 813, ../scss/main.scss */
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  color: #fff;
+  background-color: #2ecc71;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 15px;
+  font-family: neusa-next-std, sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* line 824, ../scss/main.scss */
+.loginForm a {
+  color: #767bb3;
+  font-size: 15px;
+  font-weight: 400;
+}
+
 @media only screen and (max-width: 1366px) {
-  /* line 777, ../scss/main.scss */
+  /* line 830, ../scss/main.scss */
   .menuItem:nth-child(6n) {
     margin-right: 2%;
   }
