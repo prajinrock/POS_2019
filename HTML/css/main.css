@@ -452,51 +452,56 @@ body {
 }
 
 /* line 9, ../scss/main.scss */
+html, body {
+  line-height: normal;
+}
+
+/* line 12, ../scss/main.scss */
 * {
   box-sizing: border-box;
   font-family: neusa-next-std, sans-serif;
 }
 
-/* line 13, ../scss/main.scss */
+/* line 16, ../scss/main.scss */
 button, button:hover, button:focus {
   outline: none;
   cursor: pointer;
 }
 
 /* width */
-/* line 19, ../scss/main.scss */
+/* line 22, ../scss/main.scss */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-/* line 24, ../scss/main.scss */
+/* line 27, ../scss/main.scss */
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.2);
 }
 
 /* Handle */
-/* line 29, ../scss/main.scss */
+/* line 32, ../scss/main.scss */
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.2);
   transition: all .3s;
 }
 
 /* Handle on hover */
-/* line 35, ../scss/main.scss */
+/* line 38, ../scss/main.scss */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
 
-/* line 40, ../scss/main.scss */
+/* line 43, ../scss/main.scss */
 .outerWrapper {
   width: 100vw;
   height: 100vh;
   flex-direction: column;
 }
 
-/* line 46, ../scss/main.scss */
+/* line 49, ../scss/main.scss */
 .headBar {
   background-color: #23254a;
   width: 100%;
@@ -504,7 +509,7 @@ button, button:hover, button:focus {
   align-items: center;
 }
 
-/* line 52, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 .clientName {
   background-color: rgba(0, 0, 0, 0.3);
   min-width: 7%;
@@ -521,7 +526,7 @@ button, button:hover, button:focus {
   text-overflow: ellipsis;
 }
 
-/* line 67, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 .flexBox {
   display: flex;
   display: -webkit-flex;
@@ -529,7 +534,7 @@ button, button:hover, button:focus {
   display: -ms-flex;
 }
 
-/* line 73, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 .menuPin {
   width: 50px;
   height: 100%;
@@ -538,13 +543,13 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 80, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
 .posSelectBtnHome {
   height: 100%;
   margin-right: auto;
 }
 
-/* line 84, ../scss/main.scss */
+/* line 87, ../scss/main.scss */
 .posBtnHome {
   height: 100%;
   font-size: 1rem;
@@ -554,7 +559,7 @@ button, button:hover, button:focus {
   padding: 0px 15px;
 }
 
-/* line 92, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 .systemTime {
   font-family: neusa-next-std, sans-serif;
   font-size: 14px;
@@ -565,7 +570,7 @@ button, button:hover, button:focus {
   margin-left: auto;
 }
 
-/* line 101, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 .lastBillDetails {
   color: #50537d;
   font-size: 14px;
@@ -573,24 +578,24 @@ button, button:hover, button:focus {
   text-transform: uppercase;
 }
 
-/* line 107, ../scss/main.scss */
+/* line 110, ../scss/main.scss */
 .lastBillDetails > span {
   padding-left: 10px;
 }
 
-/* line 110, ../scss/main.scss */
+/* line 113, ../scss/main.scss */
 .barCodeSearch {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 114, ../scss/main.scss */
+/* line 117, ../scss/main.scss */
 .itemSearchBox {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 118, ../scss/main.scss */
+/* line 121, ../scss/main.scss */
 .itemSearch {
   width: 110px;
   background-color: transparent;
@@ -603,12 +608,12 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 129, ../scss/main.scss */
+/* line 132, ../scss/main.scss */
 .itemSearch:focus {
   outline: none;
 }
 
-/* line 132, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 .searchBtn {
   background-color: transparent;
   border: none;
@@ -618,13 +623,13 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 140, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .searchBtn:focus {
   background-color: rgba(0, 0, 0, 0.5);
   outline: none;
 }
 
-/* line 144, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 .userPhoto {
   width: 26px;
   height: 26px;
@@ -634,12 +639,12 @@ button, button:hover, button:focus {
   margin-left: 10px;
 }
 
-/* line 152, ../scss/main.scss */
+/* line 155, ../scss/main.scss */
 .userPhoto > img {
   width: 100%;
 }
 
-/* line 155, ../scss/main.scss */
+/* line 158, ../scss/main.scss */
 .userArea {
   height: 100%;
   align-items: center;
@@ -650,19 +655,19 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 164, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .userArea:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 167, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 .userName {
   padding-top: 3px;
   color: #fff;
   font-size: 14px;
 }
 
-/* line 172, ../scss/main.scss */
+/* line 175, ../scss/main.scss */
 .userMenu {
   background-color: #1e1f3e;
   position: absolute;
@@ -673,14 +678,14 @@ button, button:hover, button:focus {
   z-index: 99;
 }
 
-/* line 181, ../scss/main.scss */
+/* line 184, ../scss/main.scss */
 .userMenu ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
-/* line 186, ../scss/main.scss */
+/* line 189, ../scss/main.scss */
 .userMenu ul li {
   font-size: 15px;
   text-transform: uppercase;
@@ -691,18 +696,19 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 195, ../scss/main.scss */
+/* line 198, ../scss/main.scss */
 .userMenu ul li:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* line 198, ../scss/main.scss */
+/* line 201, ../scss/main.scss */
 .mainContentArea {
   width: 100%;
   height: 80vh;
+  position: relative;
 }
 
-/* line 202, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
 .billPreviewSection {
   background-color: #e3e3e8;
   border-bottom: 7px solid transparent;
@@ -717,25 +723,25 @@ button, button:hover, button:focus {
   height: calc(100% - 7px);
 }
 
-/* line 219, ../scss/main.scss */
+/* line 223, ../scss/main.scss */
 .bottomBar {
   width: 100%;
   height: 14.2%;
 }
 
-/* line 224, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 .categorySection {
   width: 100%;
 }
 
-/* line 227, ../scss/main.scss */
+/* line 231, ../scss/main.scss */
 .mainCategory {
   width: 100%;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-/* line 232, ../scss/main.scss */
+/* line 236, ../scss/main.scss */
 .Catbutton {
   border: 2px solid #767ab5;
   background-color: transparent;
@@ -751,20 +757,20 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 246, ../scss/main.scss */
+/* line 250, ../scss/main.scss */
 .Catbutton:hover, .Catbutton:focus {
   background-color: #767ab5;
   color: #fff;
 }
 
-/* line 250, ../scss/main.scss */
+/* line 254, ../scss/main.scss */
 .subCategory {
   width: 100%;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
-/* line 255, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 .subCatItem {
   width: 96px;
   height: 96px;
@@ -775,32 +781,32 @@ button, button:hover, button:focus {
   margin-bottom: 15px;
 }
 
-/* line 264, ../scss/main.scss */
+/* line 268, ../scss/main.scss */
 .subColor1 {
   background-color: #1bb790;
 }
 
-/* line 267, ../scss/main.scss */
+/* line 271, ../scss/main.scss */
 .subColor2 {
   background-color: #f94d3d;
 }
 
-/* line 270, ../scss/main.scss */
+/* line 274, ../scss/main.scss */
 .subColor3 {
   background-color: #2ac1f3;
 }
 
-/* line 273, ../scss/main.scss */
+/* line 277, ../scss/main.scss */
 .subColor4 {
   background-color: #ec463a;
 }
 
-/* line 276, ../scss/main.scss */
+/* line 280, ../scss/main.scss */
 .subColor5 {
   background-color: #ff8c48;
 }
 
-/* line 279, ../scss/main.scss */
+/* line 283, ../scss/main.scss */
 .subCatName {
   font-size: 16px;
   width: 100%;
@@ -810,7 +816,7 @@ button, button:hover, button:focus {
   margin-top: 30px;
 }
 
-/* line 287, ../scss/main.scss */
+/* line 291, ../scss/main.scss */
 .subCatCount {
   font-size: 13px;
   margin-top: 10px;
@@ -820,12 +826,12 @@ button, button:hover, button:focus {
   text-overflow: ellipsis;
 }
 
-/* line 295, ../scss/main.scss */
+/* line 299, ../scss/main.scss */
 .itemSection {
   padding: 20px;
 }
 
-/* line 298, ../scss/main.scss */
+/* line 302, ../scss/main.scss */
 .viewControl {
   height: 24px;
   width: 100%;
@@ -833,13 +839,13 @@ button, button:hover, button:focus {
   position: relative;
 }
 
-/* line 304, ../scss/main.scss */
+/* line 308, ../scss/main.scss */
 .viewControl {
   border-bottom: 1px solid #33355d;
   text-align: right;
 }
 
-/* line 308, ../scss/main.scss */
+/* line 312, ../scss/main.scss */
 .viewControl .fa {
   font-size: 19px;
   color: #767ab5;
@@ -847,12 +853,12 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 314, ../scss/main.scss */
+/* line 318, ../scss/main.scss */
 .viewControl .fa:hover, .viewControl .fa:focus {
   color: #1bb790;
 }
 
-/* line 317, ../scss/main.scss */
+/* line 321, ../scss/main.scss */
 .previewButtons {
   width: 32%;
   align-items: center;
@@ -861,7 +867,7 @@ button, button:hover, button:focus {
   padding: 15px;
 }
 
-/* line 324, ../scss/main.scss */
+/* line 328, ../scss/main.scss */
 .clubbedBtn {
   width: 30%;
   border-radius: 5px;
@@ -871,50 +877,50 @@ button, button:hover, button:focus {
   color: #fff;
 }
 
-/* line 332, ../scss/main.scss */
+/* line 336, ../scss/main.scss */
 .clubbedBtn > button {
   height: 50%;
   border: none;
   color: #fff;
 }
 
-/* line 337, ../scss/main.scss */
+/* line 341, ../scss/main.scss */
 .clubbedBtn > button:nth-child(1) {
   border-radius: 5px 5px 0px 0px;
 }
 
-/* line 340, ../scss/main.scss */
+/* line 344, ../scss/main.scss */
 .clubbedBtn > button:nth-child(2) {
   border-radius: 0px 0px 5px 5px;
 }
 
-/* line 343, ../scss/main.scss */
+/* line 347, ../scss/main.scss */
 .clubbedBtn:nth-child(1) > button:nth-child(1) {
   background-color: #2ac1f3;
 }
 
-/* line 346, ../scss/main.scss */
+/* line 350, ../scss/main.scss */
 .clubbedBtn:nth-child(1) > button:nth-child(2) {
   background-color: #1d87aa;
 }
 
-/* line 349, ../scss/main.scss */
+/* line 353, ../scss/main.scss */
 .clubbedBtn:nth-child(2) > button:nth-child(1) {
   background-color: #ff8c48;
 }
 
-/* line 352, ../scss/main.scss */
+/* line 356, ../scss/main.scss */
 .clubbedBtn:nth-child(2) > button:nth-child(2) {
   background-color: #b26232;
 }
 
-/* line 355, ../scss/main.scss */
+/* line 359, ../scss/main.scss */
 .largeBtn {
   width: 30%;
   height: 70px;
 }
 
-/* line 359, ../scss/main.scss */
+/* line 363, ../scss/main.scss */
 .largeBtn > button {
   width: 100%;
   height: 100%;
@@ -925,13 +931,13 @@ button, button:hover, button:focus {
   font-size: 14px;
 }
 
-/* line 368, ../scss/main.scss */
+/* line 372, ../scss/main.scss */
 .tablePreview {
   width: 68%;
   position: relative;
 }
 
-/* line 372, ../scss/main.scss */
+/* line 376, ../scss/main.scss */
 .tableItem {
   width: 90px;
   height: 80px;
@@ -945,13 +951,13 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 384, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 .tableItem:hover {
   border: 1px solid #2ac1f3;
   box-shadow: 0px 0px 10px #2ac1f3 inset;
 }
 
-/* line 388, ../scss/main.scss */
+/* line 392, ../scss/main.scss */
 .tableIcon {
   width: 56px;
   height: 40px;
@@ -959,22 +965,22 @@ button, button:hover, button:focus {
   background-repeat: no-repeat;
 }
 
-/* line 394, ../scss/main.scss */
+/* line 398, ../scss/main.scss */
 .vacantItem {
   background-image: url(../images/table_green.svg);
 }
 
-/* line 397, ../scss/main.scss */
+/* line 401, ../scss/main.scss */
 .occupiedItem {
   background-image: url(../images/table_red.svg);
 }
 
-/* line 401, ../scss/main.scss */
+/* line 405, ../scss/main.scss */
 .settleItem {
   background-image: url(../images/table_orange.svg);
 }
 
-/* line 404, ../scss/main.scss */
+/* line 408, ../scss/main.scss */
 .tableItem {
   color: #9597c4;
   font-size: 14px;
@@ -984,13 +990,13 @@ button, button:hover, button:focus {
   flex-direction: column;
 }
 
-/* line 412, ../scss/main.scss */
+/* line 416, ../scss/main.scss */
 .tableItem label {
   padding-top: 5px;
   display: block;
 }
 
-/* line 416, ../scss/main.scss */
+/* line 420, ../scss/main.scss */
 .tableDrawyer {
   align-items: center;
   height: 100%;
@@ -999,12 +1005,12 @@ button, button:hover, button:focus {
   overflow: hidden;
 }
 
-/* line 423, ../scss/main.scss */
+/* line 427, ../scss/main.scss */
 .tableDrawyer {
   padding: 15px;
 }
 
-/* line 426, ../scss/main.scss */
+/* line 430, ../scss/main.scss */
 .drawyerBtn {
   width: 97px;
   height: 52px;
@@ -1015,12 +1021,12 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 435, ../scss/main.scss */
+/* line 439, ../scss/main.scss */
 .drawyerBtn.pushDown {
   background-image: url(../images/drawyer_close.png);
 }
 
-/* line 438, ../scss/main.scss */
+/* line 442, ../scss/main.scss */
 .itemList {
   width: 100%;
   max-height: 80%;
@@ -1029,7 +1035,7 @@ button, button:hover, button:focus {
   overflow: auto;
 }
 
-/* line 445, ../scss/main.scss */
+/* line 449, ../scss/main.scss */
 .menuItem {
   width: 15%;
   background-color: #40426f;
@@ -1042,25 +1048,25 @@ button, button:hover, button:focus {
   min-width: 185px;
 }
 
-/* line 457, ../scss/main.scss */
+/* line 461, ../scss/main.scss */
 .menuItem:nth-child(6n) {
   margin-right: 0px;
 }
 
-/* line 460, ../scss/main.scss */
+/* line 464, ../scss/main.scss */
 .itemImageHolder {
   width: 100%;
   height: 135px;
   overflow: hidden;
 }
 
-/* line 465, ../scss/main.scss */
+/* line 469, ../scss/main.scss */
 .itemImageHolder > img {
   width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 469, ../scss/main.scss */
+/* line 473, ../scss/main.scss */
 .itemSpec {
   width: 100%;
   height: 65px;
@@ -1069,7 +1075,7 @@ button, button:hover, button:focus {
   align-items: flex-end;
 }
 
-/* line 476, ../scss/main.scss */
+/* line 480, ../scss/main.scss */
 .itemQty {
   font-size: 15px;
   font-weight: 300;
@@ -1078,7 +1084,7 @@ button, button:hover, button:focus {
   padding: 7px 10px;
 }
 
-/* line 483, ../scss/main.scss */
+/* line 487, ../scss/main.scss */
 .itemPrice {
   font-size: 15px;
   font-weight: 700;
@@ -1092,7 +1098,7 @@ button, button:hover, button:focus {
   text-align: center;
 }
 
-/* line 495, ../scss/main.scss */
+/* line 499, ../scss/main.scss */
 .itemName {
   width: 100%;
   font-size: 16px;
@@ -1100,7 +1106,7 @@ button, button:hover, button:focus {
   padding: 7px 10px;
 }
 
-/* line 501, ../scss/main.scss */
+/* line 505, ../scss/main.scss */
 .billPrevHeader {
   width: 100%;
   font-size: 16px;
@@ -1112,34 +1118,34 @@ button, button:hover, button:focus {
   margin-bottom: 20px;
 }
 
-/* line 511, ../scss/main.scss */
+/* line 515, ../scss/main.scss */
 .prevTableNum {
   padding-right: 20px;
 }
 
-/* line 514, ../scss/main.scss */
+/* line 518, ../scss/main.scss */
 .prevPaxNum {
   margin-right: auto;
 }
 
-/* line 517, ../scss/main.scss */
+/* line 521, ../scss/main.scss */
 .prevWaiter .fa {
   color: #1bb790;
 }
 
-/* line 523, ../scss/main.scss */
+/* line 527, ../scss/main.scss */
 .billItem {
   align-items: center;
 }
 
-/* line 526, ../scss/main.scss */
+/* line 530, ../scss/main.scss */
 .billItemName {
   color: #2c2e56;
   font-size: 16px;
   width: 50%;
 }
 
-/* line 531, ../scss/main.scss */
+/* line 535, ../scss/main.scss */
 .QtyInput, .QtyInput:focus {
   border: 0px;
   border-bottom: 1px solid #aeafcd;
@@ -1152,7 +1158,7 @@ button, button:hover, button:focus {
   width: 45px;
 }
 
-/* line 542, ../scss/main.scss */
+/* line 546, ../scss/main.scss */
 .QtyBtn {
   width: 32px;
   height: 32px;
@@ -1164,13 +1170,13 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 552, ../scss/main.scss */
+/* line 556, ../scss/main.scss */
 .QtyBtn:focus {
   color: #fff;
   background-color: #9597c4;
 }
 
-/* line 556, ../scss/main.scss */
+/* line 560, ../scss/main.scss */
 .billprice {
   color: #2c2e56;
   font-size: 16px;
@@ -1179,30 +1185,30 @@ button, button:hover, button:focus {
   text-align: right;
 }
 
-/* line 563, ../scss/main.scss */
+/* line 567, ../scss/main.scss */
 .billQty {
   width: 30%;
   align-items: center;
 }
 
-/* line 567, ../scss/main.scss */
+/* line 571, ../scss/main.scss */
 .itemEditBox {
   font-size: 13px;
   color: #2c2e56;
   font-weight: 300;
 }
 
-/* line 572, ../scss/main.scss */
+/* line 576, ../scss/main.scss */
 .itemEditBox .fa {
   font-size: 15px;
 }
 
-/* line 575, ../scss/main.scss */
+/* line 579, ../scss/main.scss */
 .itemEditBox span {
   padding-right: 10px;
 }
 
-/* line 578, ../scss/main.scss */
+/* line 582, ../scss/main.scss */
 .unitPrice {
   font-size: 13px;
   color: #2c2e56;
@@ -1210,19 +1216,19 @@ button, button:hover, button:focus {
   padding-top: 10px;
 }
 
-/* line 584, ../scss/main.scss */
+/* line 588, ../scss/main.scss */
 .billItemContainer {
   margin-bottom: 20px;
 }
 
-/* line 587, ../scss/main.scss */
+/* line 591, ../scss/main.scss */
 .billPrevItemList {
   width: 100%;
   height: calc(100% - 220px);
   overflow: auto;
 }
 
-/* line 592, ../scss/main.scss */
+/* line 596, ../scss/main.scss */
 .billPrevDetail {
   border-bottom: 1px solid #c8c9d9;
   border-top: 1px solid #c8c9d9;
@@ -1230,7 +1236,7 @@ button, button:hover, button:focus {
   padding: 15px 0px;
 }
 
-/* line 598, ../scss/main.scss */
+/* line 602, ../scss/main.scss */
 .priceAddSpec {
   width: 50%;
   text-align: left;
@@ -1240,7 +1246,7 @@ button, button:hover, button:focus {
   padding: 3px 0px;
 }
 
-/* line 606, ../scss/main.scss */
+/* line 610, ../scss/main.scss */
 .priceAdd {
   width: 50%;
   text-align: right;
@@ -1250,28 +1256,28 @@ button, button:hover, button:focus {
   padding: 3px 0px;
 }
 
-/* line 614, ../scss/main.scss */
+/* line 618, ../scss/main.scss */
 .billTotal {
   color: #e84118;
   font-size: 24px;
   font-weight: 700;
 }
 
-/* line 619, ../scss/main.scss */
+/* line 623, ../scss/main.scss */
 .billTotal span {
   font-size: 16px;
   color: #9597c4;
   font-weight: 500;
 }
 
-/* line 624, ../scss/main.scss */
+/* line 628, ../scss/main.scss */
 .billSave {
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-/* line 629, ../scss/main.scss */
+/* line 633, ../scss/main.scss */
 .saveBillBtn button {
   background-color: #2ecc71;
   padding: 15px 25px;
@@ -1281,7 +1287,7 @@ button, button:hover, button:focus {
   border-radius: 30px;
 }
 
-/* line 637, ../scss/main.scss */
+/* line 641, ../scss/main.scss */
 .tablePreview.tableOut {
   width: 68%;
   position: absolute;
@@ -1292,30 +1298,30 @@ button, button:hover, button:focus {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* line 646, ../scss/main.scss */
+/* line 650, ../scss/main.scss */
 .tableOut > .tableDrawyer {
   height: auto;
   display: none;
 }
 
-/* line 650, ../scss/main.scss */
+/* line 654, ../scss/main.scss */
 .tabbedTables {
   display: none;
   padding: 15px;
 }
 
-/* line 654, ../scss/main.scss */
+/* line 658, ../scss/main.scss */
 .tableOut .tabbedTables {
   display: block;
 }
 
-/* line 657, ../scss/main.scss */
+/* line 661, ../scss/main.scss */
 .tableTab {
   width: 100%;
   background-color: #393c69;
 }
 
-/* line 661, ../scss/main.scss */
+/* line 665, ../scss/main.scss */
 .tabButton {
   padding: 15px 25px;
   color: #9597c4;
@@ -1323,27 +1329,27 @@ button, button:hover, button:focus {
   border: none;
 }
 
-/* line 667, ../scss/main.scss */
+/* line 671, ../scss/main.scss */
 .allBtn:focus {
   box-shadow: 0px -3px 0px rgba(255, 255, 255, 0.2) inset;
 }
 
-/* line 670, ../scss/main.scss */
+/* line 674, ../scss/main.scss */
 .vacantBtn:focus {
   box-shadow: 0px -3px 0px #2dcc70 inset;
 }
 
-/* line 673, ../scss/main.scss */
+/* line 677, ../scss/main.scss */
 .occupBtn:focus {
   box-shadow: 0px -3px 0px #d25d5a inset;
 }
 
-/* line 676, ../scss/main.scss */
+/* line 680, ../scss/main.scss */
 .settleBtn:focus {
   box-shadow: 0px -3px 0px #ff9811 inset;
 }
 
-/* line 679, ../scss/main.scss */
+/* line 683, ../scss/main.scss */
 .menuPin span {
   width: 50%;
   height: 2px;
@@ -1353,34 +1359,34 @@ button, button:hover, button:focus {
   left: 25%;
 }
 
-/* line 687, ../scss/main.scss */
+/* line 691, ../scss/main.scss */
 .menuPin span:nth-child(1) {
   top: 30%;
 }
 
-/* line 690, ../scss/main.scss */
+/* line 694, ../scss/main.scss */
 .menuPin span:nth-child(2) {
   top: 48%;
 }
 
-/* line 693, ../scss/main.scss */
+/* line 697, ../scss/main.scss */
 .menuPin span:nth-child(3) {
   top: 66%;
 }
 
-/* line 696, ../scss/main.scss */
+/* line 700, ../scss/main.scss */
 .menuActive {
   background-color: #1bb790;
 }
 
-/* line 699, ../scss/main.scss */
+/* line 703, ../scss/main.scss */
 .loginWrapper {
   width: 100%;
   height: 100vh;
   background-color: #1e1f3e;
 }
 
-/* line 704, ../scss/main.scss */
+/* line 708, ../scss/main.scss */
 .companyDetails {
   width: 50%;
   height: 100%;
@@ -1389,13 +1395,13 @@ button, button:hover, button:focus {
   justify-content: center;
 }
 
-/* line 711, ../scss/main.scss */
+/* line 715, ../scss/main.scss */
 .loginSection {
   width: 50%;
   height: 100%;
 }
 
-/* line 715, ../scss/main.scss */
+/* line 719, ../scss/main.scss */
 .loginSection {
   background-color: #23254b;
   justify-content: center;
@@ -1403,26 +1409,26 @@ button, button:hover, button:focus {
   flex-direction: column;
 }
 
-/* line 721, ../scss/main.scss */
+/* line 725, ../scss/main.scss */
 .locationTitle {
   font-size: 24px;
   color: #fff;
   margin-bottom: 25px;
 }
 
-/* line 726, ../scss/main.scss */
+/* line 730, ../scss/main.scss */
 .locationHolder .fa {
   font-size: 50px;
   margin-bottom: 10px;
   color: #535586;
 }
 
-/* line 731, ../scss/main.scss */
+/* line 735, ../scss/main.scss */
 .locationHolder img {
   margin-bottom: 10px;
 }
 
-/* line 734, ../scss/main.scss */
+/* line 738, ../scss/main.scss */
 .locationHolder button {
   width: 130px;
   height: 130px;
@@ -1437,23 +1443,23 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 747, ../scss/main.scss */
+/* line 751, ../scss/main.scss */
 .locationHolder button:hover {
   border: 1px solid #2ac1f3;
   box-shadow: 0px 0px 10px #2ac1f3 inset;
 }
 
-/* line 751, ../scss/main.scss */
+/* line 755, ../scss/main.scss */
 .companyLogo {
   width: 27%;
 }
 
-/* line 754, ../scss/main.scss */
+/* line 758, ../scss/main.scss */
 .companyLogo > img {
   width: 100%;
 }
 
-/* line 757, ../scss/main.scss */
+/* line 761, ../scss/main.scss */
 .aboutContent {
   width: 65%;
   text-align: center;
@@ -1463,12 +1469,12 @@ button, button:hover, button:focus {
   margin-top: 20px;
 }
 
-/* line 765, ../scss/main.scss */
+/* line 769, ../scss/main.scss */
 .companyBtn {
   margin-top: 15px;
 }
 
-/* line 768, ../scss/main.scss */
+/* line 772, ../scss/main.scss */
 .companyBtn button {
   background-color: #65678e;
   border: none;
@@ -1478,17 +1484,17 @@ button, button:hover, button:focus {
   color: #fff;
 }
 
-/* line 776, ../scss/main.scss */
+/* line 780, ../scss/main.scss */
 .loginForm {
   width: 40%;
 }
 
-/* line 779, ../scss/main.scss */
+/* line 783, ../scss/main.scss */
 .mdl-textfield {
   width: 100%;
 }
 
-/* line 782, ../scss/main.scss */
+/* line 786, ../scss/main.scss */
 .mdl-textfield__input {
   border: 2px solid #4b4e7e;
   border-radius: 6px;
@@ -1497,7 +1503,7 @@ button, button:hover, button:focus {
   font-family: neusa-next-std, sans-serif;
 }
 
-/* line 789, ../scss/main.scss */
+/* line 793, ../scss/main.scss */
 .mdl-textfield__label {
   color: #9c9fd1;
   padding-top: 8px;
@@ -1505,37 +1511,37 @@ button, button:hover, button:focus {
   text-shadow: 3px 0px 0px #23254b;
 }
 
-/* line 795, ../scss/main.scss */
+/* line 799, ../scss/main.scss */
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
   color: #9c9fd1;
 }
 
-/* line 798, ../scss/main.scss */
+/* line 802, ../scss/main.scss */
 .mdl-textfield__label:after {
   background-color: #4b4e7e;
 }
 
-/* line 801, ../scss/main.scss */
+/* line 805, ../scss/main.scss */
 .mdl-checkbox__label {
   color: #9c9fd1;
 }
 
-/* line 804, ../scss/main.scss */
+/* line 808, ../scss/main.scss */
 .mdl-checkbox__box-outline {
   border: 2px solid #4b4e7e;
 }
 
-/* line 807, ../scss/main.scss */
+/* line 811, ../scss/main.scss */
 .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
   border: 2px solid #1bb790;
 }
 
-/* line 810, ../scss/main.scss */
+/* line 814, ../scss/main.scss */
 .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
   background-color: #1bb790;
 }
 
-/* line 813, ../scss/main.scss */
+/* line 817, ../scss/main.scss */
 .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
   color: #fff;
   background-color: #2ecc71;
@@ -1548,15 +1554,58 @@ button, button:hover, button:focus {
   margin-bottom: 15px;
 }
 
-/* line 824, ../scss/main.scss */
+/* line 828, ../scss/main.scss */
 .loginForm a {
   color: #767bb3;
   font-size: 15px;
   font-weight: 400;
 }
 
+/* line 833, ../scss/main.scss */
+.customMenu {
+  width: 75px;
+  height: 100%;
+  background-color: #1e1f3e;
+  position: absolute;
+}
+
+/* line 842, ../scss/main.scss */
+.menuButton {
+  border: none;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid #2c2e55;
+  opacity: .5;
+}
+
+/* line 851, ../scss/main.scss */
+.menuButton:hover, .menuButton:focus {
+  border-bottom: 2px solid #4ca64f;
+  background-color: #2c2e55;
+  opacity: 1;
+}
+
+/* line 856, ../scss/main.scss */
+.menuButton > img {
+  display: block;
+  margin: 0px auto;
+  width: 35%;
+}
+
+/* line 861, ../scss/main.scss */
+.menuButton > label {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1366px) {
-  /* line 830, ../scss/main.scss */
+  /* line 870, ../scss/main.scss */
   .menuItem:nth-child(6n) {
     margin-right: 2%;
   }

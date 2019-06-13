@@ -6,6 +6,9 @@ body{
 	font-family: $appFont;
 	background-color: $bgColor;
 }
+html, body{
+	line-height: normal;
+}
 *{
 	box-sizing: border-box;
 	font-family: $appFont;
@@ -198,6 +201,7 @@ button, button:hover, button:focus{
 .mainContentArea{
 	width: 100%;
 	height: 80vh;
+	position: relative;
 }
 .billPreviewSection{
 	background-color: $liteGrey;
@@ -825,6 +829,42 @@ button, button:hover, button:focus{
 	color: #767bb3;
 	font-size: 15px;
 	font-weight: 400;
+}
+.customMenu{
+	width: 75px;
+	height: 100%;
+	background-color: #1e1f3e;
+	position: absolute;
+	@media screen and (max-width: 1366px){
+		
+	}
+}
+.menuButton{
+	border: none;
+	padding: 10px 0px;
+	text-align: center;
+	width: 100%;
+	background-color: transparent;
+	border-bottom: 2px solid #2c2e55;
+	opacity: .5;
+}
+.menuButton:hover, .menuButton:focus{
+	border-bottom: 2px solid #4ca64f;
+	background-color: #2c2e55;
+	opacity: 1;
+}
+.menuButton > img {
+	display: block;
+	margin:0px auto;
+	width: 35%;
+}
+.menuButton > label {
+	display: block;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	padding-top: 10px;
+	cursor: pointer;
 }
 @media only screen and (max-width: 1366px) {
   .menuItem:nth-child(6n){
