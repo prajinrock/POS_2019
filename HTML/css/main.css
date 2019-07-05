@@ -495,13 +495,18 @@ button, button:hover, button:focus {
 }
 
 /* line 43, ../scss/main.scss */
+.mdl-button {
+  font-family: neusa-next-std, sans-serif;
+}
+
+/* line 46, ../scss/main.scss */
 .outerWrapper {
   width: 100vw;
   height: 100vh;
   flex-direction: column;
 }
 
-/* line 49, ../scss/main.scss */
+/* line 52, ../scss/main.scss */
 .headBar {
   background-color: #23254a;
   width: 100%;
@@ -509,7 +514,7 @@ button, button:hover, button:focus {
   align-items: center;
 }
 
-/* line 55, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 .clientName {
   background-color: rgba(0, 0, 0, 0.3);
   min-width: 7%;
@@ -526,7 +531,7 @@ button, button:hover, button:focus {
   text-overflow: ellipsis;
 }
 
-/* line 70, ../scss/main.scss */
+/* line 73, ../scss/main.scss */
 .flexBox {
   display: flex;
   display: -webkit-flex;
@@ -534,7 +539,7 @@ button, button:hover, button:focus {
   display: -ms-flex;
 }
 
-/* line 76, ../scss/main.scss */
+/* line 79, ../scss/main.scss */
 .menuPin {
   width: 50px;
   height: 100%;
@@ -543,13 +548,13 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 83, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 .posSelectBtnHome {
   height: 100%;
   margin-right: auto;
 }
 
-/* line 87, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 .posBtnHome {
   height: 100%;
   font-size: 1rem;
@@ -559,7 +564,7 @@ button, button:hover, button:focus {
   padding: 0px 15px;
 }
 
-/* line 95, ../scss/main.scss */
+/* line 98, ../scss/main.scss */
 .systemTime {
   font-family: neusa-next-std, sans-serif;
   font-size: 14px;
@@ -570,7 +575,7 @@ button, button:hover, button:focus {
   margin-left: auto;
 }
 
-/* line 104, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 .lastBillDetails {
   color: #50537d;
   font-size: 14px;
@@ -578,24 +583,24 @@ button, button:hover, button:focus {
   text-transform: uppercase;
 }
 
-/* line 110, ../scss/main.scss */
+/* line 113, ../scss/main.scss */
 .lastBillDetails > span {
   padding-left: 10px;
 }
 
-/* line 113, ../scss/main.scss */
+/* line 116, ../scss/main.scss */
 .barCodeSearch {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 117, ../scss/main.scss */
+/* line 120, ../scss/main.scss */
 .itemSearchBox {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 121, ../scss/main.scss */
+/* line 124, ../scss/main.scss */
 .itemSearch {
   width: 110px;
   background-color: transparent;
@@ -608,12 +613,12 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 132, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 .itemSearch:focus {
   outline: none;
 }
 
-/* line 135, ../scss/main.scss */
+/* line 138, ../scss/main.scss */
 .searchBtn {
   background-color: transparent;
   border: none;
@@ -623,13 +628,13 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 143, ../scss/main.scss */
+/* line 146, ../scss/main.scss */
 .searchBtn:focus {
   background-color: rgba(0, 0, 0, 0.5);
   outline: none;
 }
 
-/* line 147, ../scss/main.scss */
+/* line 150, ../scss/main.scss */
 .userPhoto {
   width: 26px;
   height: 26px;
@@ -639,12 +644,12 @@ button, button:hover, button:focus {
   margin-left: 10px;
 }
 
-/* line 155, ../scss/main.scss */
+/* line 158, ../scss/main.scss */
 .userPhoto > img {
   width: 100%;
 }
 
-/* line 158, ../scss/main.scss */
+/* line 161, ../scss/main.scss */
 .userArea {
   height: 100%;
   align-items: center;
@@ -655,19 +660,19 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 167, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 .userArea:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 170, ../scss/main.scss */
+/* line 173, ../scss/main.scss */
 .userName {
   padding-top: 3px;
   color: #fff;
   font-size: 14px;
 }
 
-/* line 175, ../scss/main.scss */
+/* line 178, ../scss/main.scss */
 .userMenu {
   background-color: #1e1f3e;
   position: absolute;
@@ -678,14 +683,14 @@ button, button:hover, button:focus {
   z-index: 99;
 }
 
-/* line 184, ../scss/main.scss */
+/* line 187, ../scss/main.scss */
 .userMenu ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
-/* line 189, ../scss/main.scss */
+/* line 192, ../scss/main.scss */
 .userMenu ul li {
   font-size: 15px;
   text-transform: uppercase;
@@ -696,19 +701,19 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 198, ../scss/main.scss */
+/* line 201, ../scss/main.scss */
 .userMenu ul li:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* line 201, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 .mainContentArea {
   width: 100%;
   height: 80vh;
   position: relative;
 }
 
-/* line 206, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .billPreviewSection {
   background-color: #e3e3e8;
   border-bottom: 7px solid transparent;
@@ -723,25 +728,25 @@ button, button:hover, button:focus {
   height: calc(100% - 7px);
 }
 
-/* line 223, ../scss/main.scss */
+/* line 226, ../scss/main.scss */
 .bottomBar {
   width: 100%;
   height: 14.2%;
 }
 
-/* line 228, ../scss/main.scss */
+/* line 231, ../scss/main.scss */
 .categorySection {
   width: 100%;
 }
 
-/* line 231, ../scss/main.scss */
+/* line 234, ../scss/main.scss */
 .mainCategory {
   width: 100%;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-/* line 236, ../scss/main.scss */
+/* line 239, ../scss/main.scss */
 .Catbutton {
   border: 2px solid #767ab5;
   background-color: transparent;
@@ -757,20 +762,20 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 250, ../scss/main.scss */
+/* line 253, ../scss/main.scss */
 .Catbutton:hover, .Catbutton:focus {
   background-color: #767ab5;
   color: #fff;
 }
 
-/* line 254, ../scss/main.scss */
+/* line 257, ../scss/main.scss */
 .subCategory {
   width: 100%;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
-/* line 259, ../scss/main.scss */
+/* line 262, ../scss/main.scss */
 .subCatItem {
   width: 96px;
   height: 96px;
@@ -781,32 +786,32 @@ button, button:hover, button:focus {
   margin-bottom: 15px;
 }
 
-/* line 268, ../scss/main.scss */
+/* line 271, ../scss/main.scss */
 .subColor1 {
   background-color: #1bb790;
 }
 
-/* line 271, ../scss/main.scss */
+/* line 274, ../scss/main.scss */
 .subColor2 {
   background-color: #f94d3d;
 }
 
-/* line 274, ../scss/main.scss */
+/* line 277, ../scss/main.scss */
 .subColor3 {
   background-color: #2ac1f3;
 }
 
-/* line 277, ../scss/main.scss */
+/* line 280, ../scss/main.scss */
 .subColor4 {
   background-color: #ec463a;
 }
 
-/* line 280, ../scss/main.scss */
+/* line 283, ../scss/main.scss */
 .subColor5 {
   background-color: #ff8c48;
 }
 
-/* line 283, ../scss/main.scss */
+/* line 286, ../scss/main.scss */
 .subCatName {
   font-size: 16px;
   width: 100%;
@@ -816,7 +821,7 @@ button, button:hover, button:focus {
   margin-top: 30px;
 }
 
-/* line 291, ../scss/main.scss */
+/* line 294, ../scss/main.scss */
 .subCatCount {
   font-size: 13px;
   margin-top: 10px;
@@ -826,12 +831,12 @@ button, button:hover, button:focus {
   text-overflow: ellipsis;
 }
 
-/* line 299, ../scss/main.scss */
+/* line 302, ../scss/main.scss */
 .itemSection {
   padding: 20px;
 }
 
-/* line 302, ../scss/main.scss */
+/* line 305, ../scss/main.scss */
 .viewControl {
   height: 24px;
   width: 100%;
@@ -839,13 +844,13 @@ button, button:hover, button:focus {
   position: relative;
 }
 
-/* line 308, ../scss/main.scss */
+/* line 311, ../scss/main.scss */
 .viewControl {
   border-bottom: 1px solid #33355d;
   text-align: right;
 }
 
-/* line 312, ../scss/main.scss */
+/* line 315, ../scss/main.scss */
 .viewControl .fa {
   font-size: 19px;
   color: #767ab5;
@@ -853,12 +858,12 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 318, ../scss/main.scss */
+/* line 321, ../scss/main.scss */
 .viewControl .fa:hover, .viewControl .fa:focus {
   color: #1bb790;
 }
 
-/* line 321, ../scss/main.scss */
+/* line 324, ../scss/main.scss */
 .previewButtons {
   width: 32%;
   align-items: center;
@@ -867,7 +872,7 @@ button, button:hover, button:focus {
   padding: 15px;
 }
 
-/* line 328, ../scss/main.scss */
+/* line 331, ../scss/main.scss */
 .clubbedBtn {
   width: 30%;
   border-radius: 5px;
@@ -877,50 +882,50 @@ button, button:hover, button:focus {
   color: #fff;
 }
 
-/* line 336, ../scss/main.scss */
+/* line 339, ../scss/main.scss */
 .clubbedBtn > button {
   height: 50%;
   border: none;
   color: #fff;
 }
 
-/* line 341, ../scss/main.scss */
+/* line 344, ../scss/main.scss */
 .clubbedBtn > button:nth-child(1) {
   border-radius: 5px 5px 0px 0px;
 }
 
-/* line 344, ../scss/main.scss */
+/* line 347, ../scss/main.scss */
 .clubbedBtn > button:nth-child(2) {
   border-radius: 0px 0px 5px 5px;
 }
 
-/* line 347, ../scss/main.scss */
+/* line 350, ../scss/main.scss */
 .clubbedBtn:nth-child(1) > button:nth-child(1) {
   background-color: #2ac1f3;
 }
 
-/* line 350, ../scss/main.scss */
+/* line 353, ../scss/main.scss */
 .clubbedBtn:nth-child(1) > button:nth-child(2) {
   background-color: #1d87aa;
 }
 
-/* line 353, ../scss/main.scss */
+/* line 356, ../scss/main.scss */
 .clubbedBtn:nth-child(2) > button:nth-child(1) {
   background-color: #ff8c48;
 }
 
-/* line 356, ../scss/main.scss */
+/* line 359, ../scss/main.scss */
 .clubbedBtn:nth-child(2) > button:nth-child(2) {
   background-color: #b26232;
 }
 
-/* line 359, ../scss/main.scss */
+/* line 362, ../scss/main.scss */
 .largeBtn {
   width: 30%;
   height: 70px;
 }
 
-/* line 363, ../scss/main.scss */
+/* line 366, ../scss/main.scss */
 .largeBtn > button {
   width: 100%;
   height: 100%;
@@ -931,13 +936,13 @@ button, button:hover, button:focus {
   font-size: 14px;
 }
 
-/* line 372, ../scss/main.scss */
+/* line 375, ../scss/main.scss */
 .tablePreview {
   width: 68%;
   position: relative;
 }
 
-/* line 376, ../scss/main.scss */
+/* line 379, ../scss/main.scss */
 .tableItem {
   width: 90px;
   height: 80px;
@@ -951,13 +956,13 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 388, ../scss/main.scss */
+/* line 391, ../scss/main.scss */
 .tableItem:hover {
   border: 1px solid #2ac1f3;
   box-shadow: 0px 0px 10px #2ac1f3 inset;
 }
 
-/* line 392, ../scss/main.scss */
+/* line 395, ../scss/main.scss */
 .tableIcon {
   width: 56px;
   height: 40px;
@@ -965,22 +970,22 @@ button, button:hover, button:focus {
   background-repeat: no-repeat;
 }
 
-/* line 398, ../scss/main.scss */
+/* line 401, ../scss/main.scss */
 .vacantItem {
   background-image: url(../images/table_green.svg);
 }
 
-/* line 401, ../scss/main.scss */
+/* line 404, ../scss/main.scss */
 .occupiedItem {
   background-image: url(../images/table_red.svg);
 }
 
-/* line 405, ../scss/main.scss */
+/* line 408, ../scss/main.scss */
 .settleItem {
   background-image: url(../images/table_orange.svg);
 }
 
-/* line 408, ../scss/main.scss */
+/* line 411, ../scss/main.scss */
 .tableItem {
   color: #9597c4;
   font-size: 14px;
@@ -990,13 +995,13 @@ button, button:hover, button:focus {
   flex-direction: column;
 }
 
-/* line 416, ../scss/main.scss */
+/* line 419, ../scss/main.scss */
 .tableItem label {
   padding-top: 5px;
   display: block;
 }
 
-/* line 420, ../scss/main.scss */
+/* line 423, ../scss/main.scss */
 .tableDrawyer {
   align-items: center;
   height: 100%;
@@ -1005,12 +1010,12 @@ button, button:hover, button:focus {
   overflow: hidden;
 }
 
-/* line 427, ../scss/main.scss */
+/* line 430, ../scss/main.scss */
 .tableDrawyer {
   padding: 15px;
 }
 
-/* line 430, ../scss/main.scss */
+/* line 433, ../scss/main.scss */
 .drawyerBtn {
   width: 97px;
   height: 52px;
@@ -1021,12 +1026,12 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 439, ../scss/main.scss */
+/* line 442, ../scss/main.scss */
 .drawyerBtn.pushDown {
   background-image: url(../images/drawyer_close.png);
 }
 
-/* line 442, ../scss/main.scss */
+/* line 445, ../scss/main.scss */
 .itemList {
   width: 100%;
   max-height: 80%;
@@ -1035,7 +1040,7 @@ button, button:hover, button:focus {
   overflow: auto;
 }
 
-/* line 449, ../scss/main.scss */
+/* line 452, ../scss/main.scss */
 .menuItem {
   width: 15%;
   background-color: #40426f;
@@ -1048,25 +1053,25 @@ button, button:hover, button:focus {
   min-width: 185px;
 }
 
-/* line 461, ../scss/main.scss */
+/* line 464, ../scss/main.scss */
 .menuItem:nth-child(6n) {
   margin-right: 0px;
 }
 
-/* line 464, ../scss/main.scss */
+/* line 467, ../scss/main.scss */
 .itemImageHolder {
   width: 100%;
   height: 135px;
   overflow: hidden;
 }
 
-/* line 469, ../scss/main.scss */
+/* line 472, ../scss/main.scss */
 .itemImageHolder > img {
   width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 473, ../scss/main.scss */
+/* line 476, ../scss/main.scss */
 .itemSpec {
   width: 100%;
   height: 65px;
@@ -1075,7 +1080,7 @@ button, button:hover, button:focus {
   align-items: flex-end;
 }
 
-/* line 480, ../scss/main.scss */
+/* line 483, ../scss/main.scss */
 .itemQty {
   font-size: 15px;
   font-weight: 300;
@@ -1084,7 +1089,7 @@ button, button:hover, button:focus {
   padding: 7px 10px;
 }
 
-/* line 487, ../scss/main.scss */
+/* line 490, ../scss/main.scss */
 .itemPrice {
   font-size: 15px;
   font-weight: 700;
@@ -1098,7 +1103,7 @@ button, button:hover, button:focus {
   text-align: center;
 }
 
-/* line 499, ../scss/main.scss */
+/* line 502, ../scss/main.scss */
 .itemName {
   width: 100%;
   font-size: 16px;
@@ -1106,7 +1111,7 @@ button, button:hover, button:focus {
   padding: 7px 10px;
 }
 
-/* line 505, ../scss/main.scss */
+/* line 508, ../scss/main.scss */
 .billPrevHeader {
   width: 100%;
   font-size: 16px;
@@ -1118,34 +1123,34 @@ button, button:hover, button:focus {
   margin-bottom: 20px;
 }
 
-/* line 515, ../scss/main.scss */
+/* line 518, ../scss/main.scss */
 .prevTableNum {
   padding-right: 20px;
 }
 
-/* line 518, ../scss/main.scss */
+/* line 521, ../scss/main.scss */
 .prevPaxNum {
   margin-right: auto;
 }
 
-/* line 521, ../scss/main.scss */
+/* line 524, ../scss/main.scss */
 .prevWaiter .fa {
   color: #1bb790;
 }
 
-/* line 527, ../scss/main.scss */
+/* line 530, ../scss/main.scss */
 .billItem {
   align-items: center;
 }
 
-/* line 530, ../scss/main.scss */
+/* line 533, ../scss/main.scss */
 .billItemName {
   color: #2c2e56;
   font-size: 16px;
   width: 50%;
 }
 
-/* line 535, ../scss/main.scss */
+/* line 538, ../scss/main.scss */
 .QtyInput, .QtyInput:focus {
   border: 0px;
   border-bottom: 1px solid #aeafcd;
@@ -1158,7 +1163,7 @@ button, button:hover, button:focus {
   width: 45px;
 }
 
-/* line 546, ../scss/main.scss */
+/* line 549, ../scss/main.scss */
 .QtyBtn {
   width: 32px;
   height: 32px;
@@ -1170,13 +1175,13 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 556, ../scss/main.scss */
+/* line 559, ../scss/main.scss */
 .QtyBtn:focus {
   color: #fff;
   background-color: #9597c4;
 }
 
-/* line 560, ../scss/main.scss */
+/* line 563, ../scss/main.scss */
 .billprice {
   color: #2c2e56;
   font-size: 16px;
@@ -1185,30 +1190,30 @@ button, button:hover, button:focus {
   text-align: right;
 }
 
-/* line 567, ../scss/main.scss */
+/* line 570, ../scss/main.scss */
 .billQty {
   width: 30%;
   align-items: center;
 }
 
-/* line 571, ../scss/main.scss */
+/* line 574, ../scss/main.scss */
 .itemEditBox {
   font-size: 13px;
   color: #2c2e56;
   font-weight: 300;
 }
 
-/* line 576, ../scss/main.scss */
+/* line 579, ../scss/main.scss */
 .itemEditBox .fa {
   font-size: 15px;
 }
 
-/* line 579, ../scss/main.scss */
+/* line 582, ../scss/main.scss */
 .itemEditBox span {
   padding-right: 10px;
 }
 
-/* line 582, ../scss/main.scss */
+/* line 585, ../scss/main.scss */
 .unitPrice {
   font-size: 13px;
   color: #2c2e56;
@@ -1216,19 +1221,19 @@ button, button:hover, button:focus {
   padding-top: 10px;
 }
 
-/* line 588, ../scss/main.scss */
+/* line 591, ../scss/main.scss */
 .billItemContainer {
   margin-bottom: 20px;
 }
 
-/* line 591, ../scss/main.scss */
+/* line 594, ../scss/main.scss */
 .billPrevItemList {
   width: 100%;
   height: calc(100% - 220px);
   overflow: auto;
 }
 
-/* line 596, ../scss/main.scss */
+/* line 599, ../scss/main.scss */
 .billPrevDetail {
   border-bottom: 1px solid #c8c9d9;
   border-top: 1px solid #c8c9d9;
@@ -1236,7 +1241,7 @@ button, button:hover, button:focus {
   padding: 15px 0px;
 }
 
-/* line 602, ../scss/main.scss */
+/* line 605, ../scss/main.scss */
 .priceAddSpec {
   width: 50%;
   text-align: left;
@@ -1246,7 +1251,7 @@ button, button:hover, button:focus {
   padding: 3px 0px;
 }
 
-/* line 610, ../scss/main.scss */
+/* line 613, ../scss/main.scss */
 .priceAdd {
   width: 50%;
   text-align: right;
@@ -1256,28 +1261,28 @@ button, button:hover, button:focus {
   padding: 3px 0px;
 }
 
-/* line 618, ../scss/main.scss */
+/* line 621, ../scss/main.scss */
 .billTotal {
   color: #e84118;
   font-size: 24px;
   font-weight: 700;
 }
 
-/* line 623, ../scss/main.scss */
+/* line 626, ../scss/main.scss */
 .billTotal span {
   font-size: 16px;
   color: #9597c4;
   font-weight: 500;
 }
 
-/* line 628, ../scss/main.scss */
+/* line 631, ../scss/main.scss */
 .billSave {
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-/* line 633, ../scss/main.scss */
+/* line 636, ../scss/main.scss */
 .saveBillBtn button {
   background-color: #2ecc71;
   padding: 15px 25px;
@@ -1287,7 +1292,7 @@ button, button:hover, button:focus {
   border-radius: 30px;
 }
 
-/* line 641, ../scss/main.scss */
+/* line 644, ../scss/main.scss */
 .tablePreview.tableOut {
   width: 68%;
   position: absolute;
@@ -1298,30 +1303,30 @@ button, button:hover, button:focus {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* line 650, ../scss/main.scss */
+/* line 653, ../scss/main.scss */
 .tableOut > .tableDrawyer {
   height: auto;
   display: none;
 }
 
-/* line 654, ../scss/main.scss */
+/* line 657, ../scss/main.scss */
 .tabbedTables {
   display: none;
   padding: 15px;
 }
 
-/* line 658, ../scss/main.scss */
+/* line 661, ../scss/main.scss */
 .tableOut .tabbedTables {
   display: block;
 }
 
-/* line 661, ../scss/main.scss */
+/* line 664, ../scss/main.scss */
 .tableTab {
   width: 100%;
   background-color: #393c69;
 }
 
-/* line 665, ../scss/main.scss */
+/* line 668, ../scss/main.scss */
 .tabButton {
   padding: 15px 25px;
   color: #9597c4;
@@ -1329,27 +1334,27 @@ button, button:hover, button:focus {
   border: none;
 }
 
-/* line 671, ../scss/main.scss */
+/* line 674, ../scss/main.scss */
 .allBtn:focus {
   box-shadow: 0px -3px 0px rgba(255, 255, 255, 0.2) inset;
 }
 
-/* line 674, ../scss/main.scss */
+/* line 677, ../scss/main.scss */
 .vacantBtn:focus {
   box-shadow: 0px -3px 0px #2dcc70 inset;
 }
 
-/* line 677, ../scss/main.scss */
+/* line 680, ../scss/main.scss */
 .occupBtn:focus {
   box-shadow: 0px -3px 0px #d25d5a inset;
 }
 
-/* line 680, ../scss/main.scss */
+/* line 683, ../scss/main.scss */
 .settleBtn:focus {
   box-shadow: 0px -3px 0px #ff9811 inset;
 }
 
-/* line 683, ../scss/main.scss */
+/* line 686, ../scss/main.scss */
 .menuPin span {
   width: 50%;
   height: 2px;
@@ -1359,34 +1364,34 @@ button, button:hover, button:focus {
   left: 25%;
 }
 
-/* line 691, ../scss/main.scss */
+/* line 694, ../scss/main.scss */
 .menuPin span:nth-child(1) {
   top: 30%;
 }
 
-/* line 694, ../scss/main.scss */
+/* line 697, ../scss/main.scss */
 .menuPin span:nth-child(2) {
   top: 48%;
 }
 
-/* line 697, ../scss/main.scss */
+/* line 700, ../scss/main.scss */
 .menuPin span:nth-child(3) {
   top: 66%;
 }
 
-/* line 700, ../scss/main.scss */
+/* line 703, ../scss/main.scss */
 .menuActive {
   background-color: #1bb790;
 }
 
-/* line 703, ../scss/main.scss */
+/* line 706, ../scss/main.scss */
 .loginWrapper {
   width: 100%;
   height: 100vh;
   background-color: #1e1f3e;
 }
 
-/* line 708, ../scss/main.scss */
+/* line 711, ../scss/main.scss */
 .companyDetails {
   width: 50%;
   height: 100%;
@@ -1395,13 +1400,13 @@ button, button:hover, button:focus {
   justify-content: center;
 }
 
-/* line 715, ../scss/main.scss */
+/* line 718, ../scss/main.scss */
 .loginSection {
   width: 50%;
   height: 100%;
 }
 
-/* line 719, ../scss/main.scss */
+/* line 722, ../scss/main.scss */
 .loginSection {
   background-color: #23254b;
   justify-content: center;
@@ -1409,26 +1414,26 @@ button, button:hover, button:focus {
   flex-direction: column;
 }
 
-/* line 725, ../scss/main.scss */
+/* line 728, ../scss/main.scss */
 .locationTitle {
   font-size: 24px;
   color: #fff;
   margin-bottom: 25px;
 }
 
-/* line 730, ../scss/main.scss */
+/* line 733, ../scss/main.scss */
 .locationHolder .fa {
   font-size: 50px;
   margin-bottom: 10px;
   color: #535586;
 }
 
-/* line 735, ../scss/main.scss */
+/* line 738, ../scss/main.scss */
 .locationHolder img {
   margin-bottom: 10px;
 }
 
-/* line 738, ../scss/main.scss */
+/* line 741, ../scss/main.scss */
 .locationHolder button {
   width: 130px;
   height: 130px;
@@ -1443,23 +1448,23 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 751, ../scss/main.scss */
+/* line 754, ../scss/main.scss */
 .locationHolder button:hover {
   border: 1px solid #2ac1f3;
   box-shadow: 0px 0px 10px #2ac1f3 inset;
 }
 
-/* line 755, ../scss/main.scss */
+/* line 758, ../scss/main.scss */
 .companyLogo {
   width: 27%;
 }
 
-/* line 758, ../scss/main.scss */
+/* line 761, ../scss/main.scss */
 .companyLogo > img {
   width: 100%;
 }
 
-/* line 761, ../scss/main.scss */
+/* line 764, ../scss/main.scss */
 .aboutContent {
   width: 65%;
   text-align: center;
@@ -1469,12 +1474,12 @@ button, button:hover, button:focus {
   margin-top: 20px;
 }
 
-/* line 769, ../scss/main.scss */
+/* line 772, ../scss/main.scss */
 .companyBtn {
   margin-top: 15px;
 }
 
-/* line 772, ../scss/main.scss */
+/* line 775, ../scss/main.scss */
 .companyBtn button {
   background-color: #65678e;
   border: none;
@@ -1484,17 +1489,17 @@ button, button:hover, button:focus {
   color: #fff;
 }
 
-/* line 780, ../scss/main.scss */
+/* line 783, ../scss/main.scss */
 .loginForm {
   width: 40%;
 }
 
-/* line 783, ../scss/main.scss */
+/* line 786, ../scss/main.scss */
 .mdl-textfield {
   width: 100%;
 }
 
-/* line 786, ../scss/main.scss */
+/* line 789, ../scss/main.scss */
 .mdl-textfield__input {
   border: 2px solid #4b4e7e;
   border-radius: 6px;
@@ -1503,7 +1508,7 @@ button, button:hover, button:focus {
   font-family: neusa-next-std, sans-serif;
 }
 
-/* line 793, ../scss/main.scss */
+/* line 796, ../scss/main.scss */
 .mdl-textfield__label {
   color: #9c9fd1;
   padding-top: 8px;
@@ -1511,37 +1516,37 @@ button, button:hover, button:focus {
   text-shadow: 3px 0px 0px #23254b;
 }
 
-/* line 799, ../scss/main.scss */
+/* line 802, ../scss/main.scss */
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
   color: #9c9fd1;
 }
 
-/* line 802, ../scss/main.scss */
+/* line 805, ../scss/main.scss */
 .mdl-textfield__label:after {
   background-color: #4b4e7e;
 }
 
-/* line 805, ../scss/main.scss */
+/* line 808, ../scss/main.scss */
 .mdl-checkbox__label {
   color: #9c9fd1;
 }
 
-/* line 808, ../scss/main.scss */
+/* line 811, ../scss/main.scss */
 .mdl-checkbox__box-outline {
   border: 2px solid #4b4e7e;
 }
 
-/* line 811, ../scss/main.scss */
+/* line 814, ../scss/main.scss */
 .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
   border: 2px solid #1bb790;
 }
 
-/* line 814, ../scss/main.scss */
+/* line 817, ../scss/main.scss */
 .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
   background-color: #1bb790;
 }
 
-/* line 817, ../scss/main.scss */
+/* line 820, ../scss/main.scss */
 .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
   color: #fff;
   background-color: #2ecc71;
@@ -1554,14 +1559,14 @@ button, button:hover, button:focus {
   margin-bottom: 15px;
 }
 
-/* line 828, ../scss/main.scss */
+/* line 831, ../scss/main.scss */
 .loginForm a {
   color: #767bb3;
   font-size: 15px;
   font-weight: 400;
 }
 
-/* line 833, ../scss/main.scss */
+/* line 836, ../scss/main.scss */
 .customMenu {
   width: 75px;
   height: 100%;
@@ -1569,7 +1574,7 @@ button, button:hover, button:focus {
   position: absolute;
 }
 
-/* line 842, ../scss/main.scss */
+/* line 845, ../scss/main.scss */
 .menuButton {
   border: none;
   padding: 10px 0px;
@@ -1580,21 +1585,21 @@ button, button:hover, button:focus {
   opacity: .5;
 }
 
-/* line 851, ../scss/main.scss */
+/* line 854, ../scss/main.scss */
 .menuButton:hover, .menuButton:focus {
   border-bottom: 2px solid #4ca64f;
   background-color: #2c2e55;
   opacity: 1;
 }
 
-/* line 856, ../scss/main.scss */
+/* line 859, ../scss/main.scss */
 .menuButton > img {
   display: block;
   margin: 0px auto;
   width: 35%;
 }
 
-/* line 861, ../scss/main.scss */
+/* line 864, ../scss/main.scss */
 .menuButton > label {
   display: block;
   font-size: 13px;
@@ -1605,7 +1610,7 @@ button, button:hover, button:focus {
 }
 
 /* The Modal (background) */
-/* line 871, ../scss/main.scss */
+/* line 874, ../scss/main.scss */
 .modal {
   display: none;
   /* Hidden by default */
@@ -1628,7 +1633,7 @@ button, button:hover, button:focus {
 }
 
 /* Modal Content/Box */
-/* line 885, ../scss/main.scss */
+/* line 888, ../scss/main.scss */
 .modal-content-small {
   background-color: #2c2e55;
   margin: 15% auto;
@@ -1639,7 +1644,18 @@ button, button:hover, button:focus {
   border-radius: 10px;
 }
 
-/* line 892, ../scss/main.scss */
+/* line 895, ../scss/main.scss */
+.modal-content-xs {
+  background-color: #2c2e55;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  border: 3px solid #393c69;
+  width: 25%;
+  /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+/* line 902, ../scss/main.scss */
 .customModal h1 {
   background-color: #393c69;
   height: 36px;
@@ -1652,16 +1668,17 @@ button, button:hover, button:focus {
 }
 
 /* The Close Button */
-/* line 903, ../scss/main.scss */
+/* line 913, ../scss/main.scss */
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
   margin-right: 10px;
+  transition: all .3s;
 }
 
-/* line 911, ../scss/main.scss */
+/* line 922, ../scss/main.scss */
 .close:hover,
 .close:focus {
   color: black;
@@ -1669,19 +1686,134 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 917, ../scss/main.scss */
+/* line 928, ../scss/main.scss */
 .popContentContainer {
   padding: 10px;
 }
 
-/* line 921, ../scss/main.scss */
+/* line 932, ../scss/main.scss */
 .twoColContainer {
   width: 100%;
+  flex-wrap: wrap;
+}
+
+/* line 936, ../scss/main.scss */
+.twoColContainer > div {
+  width: calc(50% - 20px);
+  margin: 0px 10px;
+}
+
+/* line 940, ../scss/main.scss */
+.twoColContainer .mdl-textfield {
+  width: 100%;
+  padding: 20px 0px 10px 0px;
+}
+
+/* line 944, ../scss/main.scss */
+.singleColContainer {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* line 948, ../scss/main.scss */
+.singleColContainer > div {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* line 952, ../scss/main.scss */
+.singleColContainer .mdl-textfield {
+  width: 100%;
+  padding: 20px 0px 10px 0px;
+}
+
+/* line 956, ../scss/main.scss */
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+  top: 0px;
+}
+
+/* line 959, ../scss/main.scss */
+.customerSuggestionList {
+  width: 100%;
+  border-top: 2px solid #393b68;
+  padding: 4px;
+}
+
+/* line 964, ../scss/main.scss */
+.customerSuggestionList ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 968, ../scss/main.scss */
+.customerSuggestionList ul li {
+  width: 100%;
+  margin: 0px;
+  list-style: none;
+}
+
+/* line 973, ../scss/main.scss */
+.customerSuggestionList .mdl-button {
+  background-color: #25274b;
+  width: 100%;
+  margin: 2px 0px;
+  text-align: left;
+  padding: 5px 15px;
+  height: auto;
+  color: #9c9fd1;
+  box-shadow: none;
+}
+
+/* line 983, ../scss/main.scss */
+.singleColContainer .mdl-checkbox {
+  cursor: pointer;
+}
+
+/* line 986, ../scss/main.scss */
+.addonList {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+/* line 991, ../scss/main.scss */
+.addonList li {
+  padding: 5px 10px;
+  background-color: #25274b;
+  margin-bottom: 5px;
+}
+
+/* line 996, ../scss/main.scss */
+.popBtnHolder {
+  padding: 10px;
+  border-top: 3px solid #393b68;
+  justify-content: flex-end;
+}
+
+/* line 1001, ../scss/main.scss */
+.qRound .mdl-button {
+  border-radius: 30px;
+  background-color: #2ecc71;
+  padding: 5px 25px 3px 25px;
+  height: auto;
+  text-transform: unset;
+  color: #fff;
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 926, ../scss/main.scss */
+  /* line 1010, ../scss/main.scss */
   .menuItem:nth-child(6n) {
     margin-right: 2%;
+  }
+
+  /* line 1013, ../scss/main.scss */
+  .modal-content-small {
+    background-color: #2c2e55;
+    margin: 5% auto;
+    /* 15% from the top and centered */
+    border: 3px solid #393c69;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+    border-radius: 10px;
   }
 }
