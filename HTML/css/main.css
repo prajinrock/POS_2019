@@ -1524,29 +1524,30 @@ button, button:hover, button:focus {
 /* line 805, ../scss/main.scss */
 .mdl-textfield__label:after {
   background-color: #4b4e7e;
+  height: 0px;
 }
 
-/* line 808, ../scss/main.scss */
+/* line 809, ../scss/main.scss */
 .mdl-checkbox__label {
   color: #9c9fd1;
 }
 
-/* line 811, ../scss/main.scss */
+/* line 812, ../scss/main.scss */
 .mdl-checkbox__box-outline {
   border: 2px solid #4b4e7e;
 }
 
-/* line 814, ../scss/main.scss */
+/* line 815, ../scss/main.scss */
 .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
   border: 2px solid #1bb790;
 }
 
-/* line 817, ../scss/main.scss */
+/* line 818, ../scss/main.scss */
 .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
   background-color: #1bb790;
 }
 
-/* line 820, ../scss/main.scss */
+/* line 821, ../scss/main.scss */
 .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
   color: #fff;
   background-color: #2ecc71;
@@ -1559,14 +1560,14 @@ button, button:hover, button:focus {
   margin-bottom: 15px;
 }
 
-/* line 831, ../scss/main.scss */
+/* line 832, ../scss/main.scss */
 .loginForm a {
   color: #767bb3;
   font-size: 15px;
   font-weight: 400;
 }
 
-/* line 836, ../scss/main.scss */
+/* line 837, ../scss/main.scss */
 .customMenu {
   width: 75px;
   height: 100%;
@@ -1574,7 +1575,7 @@ button, button:hover, button:focus {
   position: absolute;
 }
 
-/* line 845, ../scss/main.scss */
+/* line 846, ../scss/main.scss */
 .menuButton {
   border: none;
   padding: 10px 0px;
@@ -1585,21 +1586,21 @@ button, button:hover, button:focus {
   opacity: .5;
 }
 
-/* line 854, ../scss/main.scss */
+/* line 855, ../scss/main.scss */
 .menuButton:hover, .menuButton:focus {
   border-bottom: 2px solid #4ca64f;
   background-color: #2c2e55;
   opacity: 1;
 }
 
-/* line 859, ../scss/main.scss */
+/* line 860, ../scss/main.scss */
 .menuButton > img {
   display: block;
   margin: 0px auto;
   width: 35%;
 }
 
-/* line 864, ../scss/main.scss */
+/* line 865, ../scss/main.scss */
 .menuButton > label {
   display: block;
   font-size: 13px;
@@ -1610,7 +1611,7 @@ button, button:hover, button:focus {
 }
 
 /* The Modal (background) */
-/* line 874, ../scss/main.scss */
+/* line 875, ../scss/main.scss */
 .modal {
   display: none;
   /* Hidden by default */
@@ -1633,7 +1634,7 @@ button, button:hover, button:focus {
 }
 
 /* Modal Content/Box */
-/* line 888, ../scss/main.scss */
+/* line 889, ../scss/main.scss */
 .modal-content-small {
   background-color: #2c2e55;
   margin: 15% auto;
@@ -1644,7 +1645,7 @@ button, button:hover, button:focus {
   border-radius: 10px;
 }
 
-/* line 895, ../scss/main.scss */
+/* line 896, ../scss/main.scss */
 .modal-content-xs {
   background-color: #2c2e55;
   margin: 15% auto;
@@ -1655,7 +1656,7 @@ button, button:hover, button:focus {
   border-radius: 10px;
 }
 
-/* line 902, ../scss/main.scss */
+/* line 903, ../scss/main.scss */
 .customModal h1 {
   background-color: #393c69;
   height: 36px;
@@ -1668,7 +1669,7 @@ button, button:hover, button:focus {
 }
 
 /* The Close Button */
-/* line 913, ../scss/main.scss */
+/* line 914, ../scss/main.scss */
 .close {
   color: #aaa;
   float: right;
@@ -1678,7 +1679,7 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 922, ../scss/main.scss */
+/* line 923, ../scss/main.scss */
 .close:hover,
 .close:focus {
   color: black;
@@ -1686,73 +1687,73 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 928, ../scss/main.scss */
+/* line 929, ../scss/main.scss */
 .popContentContainer {
   padding: 10px;
 }
 
-/* line 932, ../scss/main.scss */
+/* line 933, ../scss/main.scss */
 .twoColContainer {
   width: 100%;
   flex-wrap: wrap;
 }
 
-/* line 936, ../scss/main.scss */
+/* line 937, ../scss/main.scss */
 .twoColContainer > div {
   width: calc(50% - 20px);
   margin: 0px 10px;
 }
 
-/* line 940, ../scss/main.scss */
+/* line 941, ../scss/main.scss */
 .twoColContainer .mdl-textfield {
   width: 100%;
   padding: 20px 0px 10px 0px;
 }
 
-/* line 944, ../scss/main.scss */
+/* line 945, ../scss/main.scss */
 .singleColContainer {
   width: 100%;
   flex-wrap: wrap;
 }
 
-/* line 948, ../scss/main.scss */
+/* line 949, ../scss/main.scss */
 .singleColContainer > div {
   width: 100%;
   margin-bottom: 5px;
 }
 
-/* line 952, ../scss/main.scss */
+/* line 953, ../scss/main.scss */
 .singleColContainer .mdl-textfield {
   width: 100%;
   padding: 20px 0px 10px 0px;
 }
 
-/* line 956, ../scss/main.scss */
+/* line 957, ../scss/main.scss */
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
   top: 0px;
 }
 
-/* line 959, ../scss/main.scss */
+/* line 960, ../scss/main.scss */
 .customerSuggestionList {
   width: 100%;
   border-top: 2px solid #393b68;
   padding: 4px;
 }
 
-/* line 964, ../scss/main.scss */
+/* line 965, ../scss/main.scss */
 .customerSuggestionList ul {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 968, ../scss/main.scss */
+/* line 969, ../scss/main.scss */
 .customerSuggestionList ul li {
   width: 100%;
   margin: 0px;
   list-style: none;
 }
 
-/* line 973, ../scss/main.scss */
+/* line 974, ../scss/main.scss */
 .customerSuggestionList .mdl-button {
   background-color: #25274b;
   width: 100%;
@@ -1764,33 +1765,33 @@ button, button:hover, button:focus {
   box-shadow: none;
 }
 
-/* line 983, ../scss/main.scss */
+/* line 984, ../scss/main.scss */
 .singleColContainer .mdl-checkbox {
   cursor: pointer;
 }
 
-/* line 986, ../scss/main.scss */
+/* line 987, ../scss/main.scss */
 .addonList {
   padding: 0px;
   margin: 0px;
   list-style: none;
 }
 
-/* line 991, ../scss/main.scss */
+/* line 992, ../scss/main.scss */
 .addonList li {
   padding: 5px 10px;
   background-color: #25274b;
   margin-bottom: 5px;
 }
 
-/* line 996, ../scss/main.scss */
+/* line 997, ../scss/main.scss */
 .popBtnHolder {
   padding: 10px;
   border-top: 3px solid #393b68;
   justify-content: flex-end;
 }
 
-/* line 1001, ../scss/main.scss */
+/* line 1002, ../scss/main.scss */
 .qRound .mdl-button {
   border-radius: 30px;
   background-color: #2ecc71;
@@ -1801,12 +1802,12 @@ button, button:hover, button:focus {
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 1010, ../scss/main.scss */
+  /* line 1011, ../scss/main.scss */
   .menuItem:nth-child(6n) {
     margin-right: 2%;
   }
 
-  /* line 1013, ../scss/main.scss */
+  /* line 1014, ../scss/main.scss */
   .modal-content-small {
     background-color: #2c2e55;
     margin: 5% auto;
