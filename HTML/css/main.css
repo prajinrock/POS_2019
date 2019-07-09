@@ -1876,13 +1876,18 @@ button, button:hover, button:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* line 1060, ../scss/main.scss */
+.mdl-data-table tbody tr.is-selected {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 @media only screen and (max-width: 1366px) {
-  /* line 1061, ../scss/main.scss */
+  /* line 1064, ../scss/main.scss */
   .menuItem:nth-child(6n) {
     margin-right: 2%;
   }
 
-  /* line 1064, ../scss/main.scss */
+  /* line 1067, ../scss/main.scss */
   .modal-content-small {
     background-color: #2c2e55;
     margin: 5% auto;

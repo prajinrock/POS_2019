@@ -211,7 +211,7 @@
 	                		<button class="Catbutton" id="shiftOpenBtn">Shift Open</button>
 	                		<button class="Catbutton" id="addCustBtn">Add Customer</button>
 	                		<button class="Catbutton" id="billSearchBtn">Bill Search</button>
-	                		<button class="Catbutton">Wine</button>
+	                		<button class="Catbutton" id="discountInfoBtn">Discount Info</button>
 	                		<button class="Catbutton">Wine</button>
 	                		<button class="Catbutton">Wine</button>
 	                		<button class="Catbutton">Wine</button>
@@ -951,6 +951,36 @@
     	</div>
   </div>
 </div>
+<div id="discountInfo" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content-small customModal">
+  	<h1><label>Discount Info</label><span class="close">&times;</span></h1>
+    
+    <div class="popTable">
+    		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+			  <thead>
+			    <tr>
+			      <th class="mdl-data-table__cell--non-numeric">Discount Type</th>
+			      <th>Percentage</th>
+			      <th>Amount</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td class="mdl-data-table__cell--non-numeric">Promotional</td>
+			      <td>25</td>
+			      <td>$2.90</td>
+			    </tr>
+			  </tbody>
+			</table>
+    	</div>
+    	<div class="popBtnHolder flexBox qRound">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+		  Close
+		</button>
+    </div>
+  </div>
+</div>
 
 <script>
 $(document).ready(function(){
@@ -980,6 +1010,9 @@ $(document).ready(function(){
   });
   $("#billSearchBtn").click(function(){
     $("#billSearch").show();
+  });
+  $("#discountInfoBtn").click(function(){
+    $("#discountInfo").show();
   });
   //COMMON CLOSE FOR ALL=== 
   $(".close").click(function(){
