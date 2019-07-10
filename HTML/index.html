@@ -212,7 +212,7 @@
 	                		<button class="Catbutton" id="addCustBtn">Add Customer</button>
 	                		<button class="Catbutton" id="billSearchBtn">Bill Search</button>
 	                		<button class="Catbutton" id="discountInfoBtn">Discount Info</button>
-	                		<button class="Catbutton">Wine</button>
+	                		<button class="Catbutton" id="payInBtn">Pay In</button>
 	                		<button class="Catbutton">Wine</button>
 	                		<button class="Catbutton">Wine</button>
 	                		<button class="Catbutton">Wine</button>
@@ -733,7 +733,7 @@
 <div id="ncPos" class="modal">
   <!-- Modal content -->
   <div class="popBox_small customModal">
-  	<h1><label>Change PIN</label><span class="close">&times;</span></h1>
+  	<h1><label>NC POS</label><span class="close">&times;</span></h1>
     <div class="popContentContainer">
     	<div class="singleColContainer flexBox">
     		<div>
@@ -981,6 +981,66 @@
     </div>
   </div>
 </div>
+<div id="payIn" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content-small customModal">
+  	<h1><label>Pay In</label><span class="close">&times;</span></h1>
+    <div class="popContentContainer">
+    	<div class="twoColContainer flexBox">
+    		<div>
+    			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="username">
+					<label class="mdl-textfield__label" for="username">Amount</label>
+				</div>
+    		</div>
+    		<div>
+    			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="username">
+					<label class="mdl-textfield__label" for="username">Description</label>
+				</div>
+    		</div>
+    		<div>
+    			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				    <select class="mdl-textfield__input" id="octane" name="Approved User">
+				      <option></option>
+				      <option value="85">85</option>
+				      <option value="87">87</option>
+				      <option value="89">89</option>
+				      <option value="91">91</option>
+				      <option value="diesel">Diesel</option>
+				    </select>
+				    <label class="mdl-textfield__label" for="octane">Customer Name</label>
+				  </div>
+    		</div>
+    		<div>
+    			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				    <select class="mdl-textfield__input" id="octane" name="Approved User">
+				      <option></option>
+				      <option value="85">85</option>
+				      <option value="87">87</option>
+				      <option value="89">89</option>
+				      <option value="91">91</option>
+				      <option value="diesel">Diesel</option>
+				    </select>
+				    <label class="mdl-textfield__label" for="octane">Item Name</label>
+				  </div>
+    		</div>
+    		<div class="columnMerge">
+    			<div class="mdl-textfield mdl-js-textfield">
+				    <textarea class="mdl-textfield__input" type="text" rows= "5" id="sample5" ></textarea>
+				    <label class="mdl-textfield__label" for="sample5">Notes</label>
+				  </div>
+    		</div>
+    	</div>
+    </div>
+    <div class="popBtnHolder flexBox qRound">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+		  Pay
+		</button>
+    </div>
+    
+  </div>
+</div>
 
 <script>
 $(document).ready(function(){
@@ -1013,6 +1073,9 @@ $(document).ready(function(){
   });
   $("#discountInfoBtn").click(function(){
     $("#discountInfo").show();
+  });
+  $("#payInBtn").click(function(){
+    $("#payIn").show();
   });
   //COMMON CLOSE FOR ALL=== 
   $(".close").click(function(){

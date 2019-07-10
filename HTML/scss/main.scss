@@ -1060,6 +1060,9 @@ button, button:hover, button:focus{
 .mdl-data-table tbody tr.is-selected{
 	background-color: rgba(255,255,255,.1);
 }
+.twoColContainer > div.columnMerge{
+	width: 100%;
+}
 @media only screen and (max-width: 1366px) {
   .menuItem:nth-child(6n){
   	margin-right: 2%;
