@@ -213,7 +213,7 @@
 	                		<button class="Catbutton" id="billSearchBtn">Bill Search</button>
 	                		<button class="Catbutton" id="discountInfoBtn">Discount Info</button>
 	                		<button class="Catbutton" id="payInBtn">Pay In</button>
-	                		<button class="Catbutton">Wine</button>
+	                		<button class="Catbutton" id="rePrintKotBtn">Re-Print KoT</button>
 	                		<button class="Catbutton">Wine</button>
 	                		<button class="Catbutton">Wine</button>
 	                		<button class="Catbutton">Wine</button>
@@ -1041,6 +1041,28 @@
     
   </div>
 </div>
+<div id="rePrintKot" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content-small customModal">
+  	<h1><label>Re-Print KOT</label><span class="close">&times;</span></h1>
+    <div class="KotPop">
+    	<div class="KotOuter">
+    		<div class="kotName">
+    			<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-Kot1">
+				  <input type="checkbox" id="checkbox-Kot1" class="mdl-checkbox__input">
+				  <span class="mdl-checkbox__label">Hot Sauce</span>
+				</label>
+    		</div>
+    	</div>
+    </div>
+    <div class="popBtnHolder flexBox qRound">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+		  Pay
+		</button>
+    </div>
+    
+  </div>
+</div>
 
 <script>
 $(document).ready(function(){
@@ -1077,7 +1099,10 @@ $(document).ready(function(){
   $("#payInBtn").click(function(){
     $("#payIn").show();
   });
-  //COMMON CLOSE FOR ALL=== 
+  $("#rePrintKotBtn").click(function(){
+    $("#rePrintKot").show();
+  });
+  //COMMON CLOSE FOR ALL=== rePrintKot
   $(".close").click(function(){
     $(".close").parents(".modal").hide();
   });
