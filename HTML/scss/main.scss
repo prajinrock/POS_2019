@@ -1032,6 +1032,7 @@ button, button:hover, button:focus{
 	padding:10px;
 	border-top: 3px solid #393b68;
 	justify-content: flex-end;
+	align-items: center;
 }
 .qRound .mdl-button{
 	border-radius: 30px;
@@ -1040,6 +1041,10 @@ button, button:hover, button:focus{
 	height: auto;
 	text-transform: unset;
 	color: #fff;
+	margin-left: 15px;
+}
+.qRound .inactBtn{
+	background-color: #4c4e7f;
 }
 .popTable{
 	width: 100%;
@@ -1062,6 +1067,40 @@ button, button:hover, button:focus{
 }
 .twoColContainer > div.columnMerge{
 	width: 100%;
+}
+.KotPop{
+	padding:5px;
+	background-color: #e4e3e9;
+}
+.KotItemBox{
+	width: 100%;
+	flex-wrap: wrap;
+	padding:15px 10px 0px 10px;
+	font-size: 15px;
+}
+.KotItemBox .KotItemName{
+	width: 65%;
+}
+.KotItemBox .KotItemQty{
+	width: 35%;
+	text-align: right;
+}
+.kotName{
+	padding:5px 10px;
+	background-color: #c1bdd8;
+	color: #383b68;
+}
+.kotName .mdl-checkbox__label{
+	color: #383b68;
+}
+.KotOuter{
+	padding-bottom: 15px;
+}
+.alignLeft{
+	margin-right: auto;
+}
+.taxInfoTab th, .taxInfoTab td{
+	text-align: center;
 }
 @media only screen and (max-width: 1366px) {
   .menuItem:nth-child(6n){

@@ -214,7 +214,7 @@
 	                		<button class="Catbutton" id="discountInfoBtn">Discount Info</button>
 	                		<button class="Catbutton" id="payInBtn">Pay In</button>
 	                		<button class="Catbutton" id="rePrintKotBtn">Re-Print KoT</button>
-	                		<button class="Catbutton">Wine</button>
+	                		<button class="Catbutton" id="taxInfoBtn">Tax Info</button>
 	                		<button class="Catbutton">Wine</button>
 	                		<button class="Catbutton">Wine</button>
 	                	</div>
@@ -1050,17 +1050,91 @@
     		<div class="kotName">
     			<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-Kot1">
 				  <input type="checkbox" id="checkbox-Kot1" class="mdl-checkbox__input">
-				  <span class="mdl-checkbox__label">Hot Sauce</span>
+				  <span class="mdl-checkbox__label">KoT 001</span>
 				</label>
+    		</div>
+    		<div class="KotItemBox flexBox">
+    			<div class="KotItemName">Cheese Burger</div>
+    			<div class="KotItemQty">Qty 3</div>
+    		</div>
+    		<div class="KotItemBox flexBox">
+    			<div class="KotItemName">Cheese Burger</div>
+    			<div class="KotItemQty">Qty 3</div>
+    		</div>
+    		<div class="KotItemBox flexBox">
+    			<div class="KotItemName">Cheese Burger</div>
+    			<div class="KotItemQty">Qty 3</div>
+    		</div>
+    	</div>
+    	<div class="KotOuter">
+    		<div class="kotName">
+    			<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-Kot2">
+				  <input type="checkbox" id="checkbox-Kot2" class="mdl-checkbox__input">
+				  <span class="mdl-checkbox__label">KoT 001</span>
+				</label>
+    		</div>
+    		<div class="KotItemBox flexBox">
+    			<div class="KotItemName">Cheese Burger</div>
+    			<div class="KotItemQty">Qty 3</div>
+    		</div>
+    		<div class="KotItemBox flexBox">
+    			<div class="KotItemName">Cheese Burger</div>
+    			<div class="KotItemQty">Qty 3</div>
+    		</div>
+    		<div class="KotItemBox flexBox">
+    			<div class="KotItemName">Cheese Burger</div>
+    			<div class="KotItemQty">Qty 3</div>
     		</div>
     	</div>
     </div>
     <div class="popBtnHolder flexBox qRound">
+		<div class="alignLeft">
+			<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-Kot3">
+			  <input type="checkbox" id="checkbox-Kot3" class="mdl-checkbox__input">
+			  <span class="mdl-checkbox__label">All</span>
+			</label>
+		</div>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect inactBtn">
+		  Cancel
+		</button>
 		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-		  Pay
+		  Re-Print
 		</button>
     </div>
     
+  </div>
+</div>
+<div id="taxInfo" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content-small customModal">
+  	<h1><label>Tax Info</label><span class="close">&times;</span></h1>
+    
+    <div class="popTable">
+    		<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp taxInfoTab">
+			  <tbody>
+			    <tr>
+			      <td>CGST</td>
+			      <td>8%</td>
+			      <td>$120.00</td>
+			    </tr>
+			    <tr>
+			      <td>SGST</td>
+			      <td>8%</td>
+			      <td>$120.00</td>
+			    </tr>
+			    <tr>
+			      <td>Service Tax</td>
+			      <td>2%</td>
+			      <td>$30.00</td>
+			    </tr>
+			  </tbody>
+			</table>
+    	</div>
+    	<div class="popBtnHolder flexBox qRound">
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+			  Close
+			</button>
+	    </div>
   </div>
 </div>
 
@@ -1102,7 +1176,10 @@ $(document).ready(function(){
   $("#rePrintKotBtn").click(function(){
     $("#rePrintKot").show();
   });
-  //COMMON CLOSE FOR ALL=== rePrintKot
+  $("#taxInfoBtn").click(function(){
+    $("#taxInfo").show();
+  });
+  //COMMON CLOSE FOR ALL=== 
   $(".close").click(function(){
     $(".close").parents(".modal").hide();
   });

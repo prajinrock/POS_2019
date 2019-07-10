@@ -1840,9 +1840,10 @@ button, button:hover, button:focus {
   padding: 10px;
   border-top: 3px solid #393b68;
   justify-content: flex-end;
+  align-items: center;
 }
 
-/* line 1036, ../scss/main.scss */
+/* line 1037, ../scss/main.scss */
 .qRound .mdl-button {
   border-radius: 30px;
   background-color: #2ecc71;
@@ -1850,49 +1851,107 @@ button, button:hover, button:focus {
   height: auto;
   text-transform: unset;
   color: #fff;
+  margin-left: 15px;
 }
 
-/* line 1044, ../scss/main.scss */
+/* line 1046, ../scss/main.scss */
+.qRound .inactBtn {
+  background-color: #4c4e7f;
+}
+
+/* line 1049, ../scss/main.scss */
 .popTable {
   width: 100%;
   border-top: 3px solid #393b68;
   padding: 4px;
 }
 
-/* line 1049, ../scss/main.scss */
+/* line 1054, ../scss/main.scss */
 .popTable table {
   width: 100%;
   background-color: #25284b;
   color: #fff;
 }
 
-/* line 1054, ../scss/main.scss */
+/* line 1059, ../scss/main.scss */
 .popTable .mdl-data-table th {
   color: #9d9fd2 !important;
 }
 
-/* line 1057, ../scss/main.scss */
+/* line 1062, ../scss/main.scss */
 .mdl-data-table tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 1060, ../scss/main.scss */
+/* line 1065, ../scss/main.scss */
 .mdl-data-table tbody tr.is-selected {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 1063, ../scss/main.scss */
+/* line 1068, ../scss/main.scss */
 .twoColContainer > div.columnMerge {
   width: 100%;
 }
 
+/* line 1071, ../scss/main.scss */
+.KotPop {
+  padding: 5px;
+  background-color: #e4e3e9;
+}
+
+/* line 1075, ../scss/main.scss */
+.KotItemBox {
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 15px 10px 0px 10px;
+  font-size: 15px;
+}
+
+/* line 1081, ../scss/main.scss */
+.KotItemBox .KotItemName {
+  width: 65%;
+}
+
+/* line 1084, ../scss/main.scss */
+.KotItemBox .KotItemQty {
+  width: 35%;
+  text-align: right;
+}
+
+/* line 1088, ../scss/main.scss */
+.kotName {
+  padding: 5px 10px;
+  background-color: #c1bdd8;
+  color: #383b68;
+}
+
+/* line 1093, ../scss/main.scss */
+.kotName .mdl-checkbox__label {
+  color: #383b68;
+}
+
+/* line 1096, ../scss/main.scss */
+.KotOuter {
+  padding-bottom: 15px;
+}
+
+/* line 1099, ../scss/main.scss */
+.alignLeft {
+  margin-right: auto;
+}
+
+/* line 1102, ../scss/main.scss */
+.taxInfoTab th, .taxInfoTab td {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1366px) {
-  /* line 1067, ../scss/main.scss */
+  /* line 1106, ../scss/main.scss */
   .menuItem:nth-child(6n) {
     margin-right: 2%;
   }
 
-  /* line 1070, ../scss/main.scss */
+  /* line 1109, ../scss/main.scss */
   .modal-content-small {
     background-color: #2c2e55;
     margin: 5% auto;
