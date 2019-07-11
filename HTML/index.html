@@ -44,17 +44,17 @@
 	});
 	 
   </script>
-	<script>
-		function openCity(cityName) {
-		  var i;
-		  var x = document.getElementsByClassName("city");
-		  for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none";  
-		  }
-		  document.getElementById(cityName).style.display = "block";  
-		}
-	</script>
-	<!-- POP UP -->
+<script>
+	function openCity(cityName) {
+	  var i;
+	  var x = document.getElementsByClassName("city");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	  }
+	  document.getElementById(cityName).style.display = "block";  
+	}
+</script>
+<!-- POP UP -->
 	
 </head>
 
@@ -215,8 +215,11 @@
 	                		<button class="Catbutton" id="payInBtn">Pay In</button>
 	                		<button class="Catbutton" id="rePrintKotBtn">Re-Print KoT</button>
 	                		<button class="Catbutton" id="taxInfoBtn">Tax Info</button>
-	                		<button class="Catbutton">Wine</button>
-	                		<button class="Catbutton">Wine</button>
+	                		<button class="Catbutton" id="voidCommentsBtn">Comments Common</button>
+	                		<button class="Catbutton" id="selectWaiterBtn">Waiter Select</button>
+	                		<button class="Catbutton" id="billReprintBtn">Bill Re-Print</button>
+	                		<button class="Catbutton" id="selectWaiterBtn">NA</button>
+	                		<button class="Catbutton" id="selectWaiterBtn">NA</button>
 	                	</div>
 	                	<div class="subCategory flexBox">
 	                		<div class="subCatItem subColor1">
@@ -1137,7 +1140,122 @@
 	    </div>
   </div>
 </div>
-
+<div id="voidComments" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content-small customModal">
+  	<h1><label>Void Bill Comments</label><span class="close">&times;</span></h1>
+    <div class="popContentContainer">
+    	<div class="twoColContainer flexBox">
+    		<div class="columnMerge">
+    			<div class="mdl-textfield mdl-js-textfield">
+				    <textarea class="mdl-textfield__input" type="text" rows= "5" id="sample5" ></textarea>
+				    <label class="mdl-textfield__label" for="sample5">Comments</label>
+				</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="popBtnHolder flexBox qRound">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect inactBtn">
+		  Cancel
+		</button>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect dangerBtn">
+		  Confirm Delete
+		</button>
+    </div>
+  </div>
+</div>
+<div id="selectWaiter" class="modal">
+  <!-- Modal content -->
+  <div class="popBox_medium customModal">
+  	<h1><label>Waiter Selection</label><span class="close">&times;</span></h1>
+    <div class="popContentContainer">
+    	<div class="twoColContainer flexBox">
+    		<div class="buttonWide">
+    			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+				  Arya Stark
+				</button>
+    		</div>
+    		<div class="buttonWide">
+    			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+				  Brandon Stark
+				</button>
+    		</div>
+    		<div class="buttonWide">
+    			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+				  Jon Snow
+				</button>
+    		</div>
+    		<div class="buttonWide">
+    			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+				  John Doe
+				</button>
+    		</div>
+    		<div class="buttonWide">
+    			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+				  John Smith
+				</button>
+    		</div>
+    		<div class="buttonWide">
+    			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+				  Tony Stark
+				</button>
+    		</div>
+    		<div class="buttonWide">
+    			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+				  Steve Rogers
+				</button>
+    		</div>
+    		<div class="buttonWide">
+    			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+				  Thor
+				</button>
+    		</div>
+    	</div>
+    </div>
+  </div>
+</div>
+<div id="billReprint" class="modal">
+  <!-- Modal content -->
+  <div class="popBox_large customModal">
+  	<h1><label>Waiter Selection</label><span class="close">&times;</span></h1>
+    <div class="popContentContainer">
+    	<div class="threeColContainer flexBox">
+    		<div class="container_1by3">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<select class="mdl-textfield__input" id="octane" name="Approved User">
+					  <option></option>
+					  <option value="85">85</option>
+					  <option value="87">87</option>
+					  <option value="89">89</option>
+					  <option value="91">91</option>
+					  <option value="diesel">Diesel</option>
+					</select>
+					<label class="mdl-textfield__label" for="octane">Search or Select Bill Number</label>
+				</div>
+				<div class="popTable">
+					<table class="mdl-data-table mdl-shadow--2dp">
+					  <thead>
+					    <tr>
+					      <th class="mdl-data-table__cell--non-numeric">Bill Number</th>
+					      <th>Table Number</th>
+					      <th>Amount</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td class="mdl-data-table__cell--non-numeric">6523</td>
+					      <td>Table 03</td>
+					      <td>$750.00</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>	
+    		</div>
+    		<div class="container_2by3"></div>
+    	</div>
+    </div>
+  </div>
+</div>
 <script>
 $(document).ready(function(){
   $("#addCustBtn").click(function(){
@@ -1178,6 +1296,15 @@ $(document).ready(function(){
   });
   $("#taxInfoBtn").click(function(){
     $("#taxInfo").show();
+  });
+  $("#voidCommentsBtn").click(function(){
+    $("#voidComments").show();
+  });
+  $("#selectWaiterBtn").click(function(){
+    $("#selectWaiter").show();
+  });
+  $("#billReprintBtn").click(function(){
+    $("#billReprint").show();
   });
   //COMMON CLOSE FOR ALL=== 
   $(".close").click(function(){

@@ -1635,11 +1635,6 @@ button, button:hover, button:focus {
 
 /* Modal Content/Box */
 /* line 889, ../scss/main.scss */
-.popBox_small {
-  width: 20%;
-}
-
-/* line 893, ../scss/main.scss */
 .modal-content-small {
   background-color: #2c2e55;
   margin: 10% auto;
@@ -1650,7 +1645,7 @@ button, button:hover, button:focus {
   border-radius: 10px;
 }
 
-/* line 900, ../scss/main.scss */
+/* line 896, ../scss/main.scss */
 .popBox_small {
   background-color: #2c2e55;
   margin: 10% auto;
@@ -1661,7 +1656,7 @@ button, button:hover, button:focus {
   border-radius: 10px;
 }
 
-/* line 907, ../scss/main.scss */
+/* line 903, ../scss/main.scss */
 .popBox_medium {
   background-color: #2c2e55;
   margin: 10% auto;
@@ -1672,7 +1667,7 @@ button, button:hover, button:focus {
   border-radius: 10px;
 }
 
-/* line 914, ../scss/main.scss */
+/* line 910, ../scss/main.scss */
 .popBox_large {
   background-color: #2c2e55;
   margin: 10% auto;
@@ -1683,7 +1678,7 @@ button, button:hover, button:focus {
   border-radius: 10px;
 }
 
-/* line 921, ../scss/main.scss */
+/* line 917, ../scss/main.scss */
 .popBox_xlarge {
   background-color: #2c2e55;
   margin: 10% auto;
@@ -1694,7 +1689,7 @@ button, button:hover, button:focus {
   border-radius: 10px;
 }
 
-/* line 928, ../scss/main.scss */
+/* line 924, ../scss/main.scss */
 .customModal h1 {
   background-color: #393c69;
   height: 36px;
@@ -1706,7 +1701,7 @@ button, button:hover, button:focus {
   box-sizing: border-box;
 }
 
-/* line 938, ../scss/main.scss */
+/* line 934, ../scss/main.scss */
 .fullbutton .mdl-button {
   width: 100%;
   background-color: #25284b;
@@ -1714,13 +1709,22 @@ button, button:hover, button:focus {
   margin-bottom: 5px;
 }
 
-/* line 944, ../scss/main.scss */
+/* line 940, ../scss/main.scss */
+.buttonWide .mdl-button {
+  width: 100%;
+  background-color: #25284b;
+  color: #9d9ed4;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* line 947, ../scss/main.scss */
 .mdl-textfield option {
   color: #25284b;
 }
 
 /* The Close Button */
-/* line 948, ../scss/main.scss */
+/* line 951, ../scss/main.scss */
 .close {
   color: #9d9ed4;
   float: right;
@@ -1730,7 +1734,7 @@ button, button:hover, button:focus {
   transition: all .3s;
 }
 
-/* line 957, ../scss/main.scss */
+/* line 960, ../scss/main.scss */
 .close:hover,
 .close:focus {
   color: #ec463a;
@@ -1738,73 +1742,96 @@ button, button:hover, button:focus {
   cursor: pointer;
 }
 
-/* line 963, ../scss/main.scss */
+/* line 966, ../scss/main.scss */
 .popContentContainer {
   padding: 10px;
 }
 
-/* line 967, ../scss/main.scss */
+/* line 970, ../scss/main.scss */
 .twoColContainer {
   width: 100%;
   flex-wrap: wrap;
 }
 
-/* line 971, ../scss/main.scss */
+/* line 974, ../scss/main.scss */
 .twoColContainer > div {
   width: calc(50% - 20px);
   margin: 0px 10px;
 }
 
-/* line 975, ../scss/main.scss */
+/* line 978, ../scss/main.scss */
+.threeColContainer {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* line 982, ../scss/main.scss */
+.container_1by3 {
+  width: 33.3333%;
+}
+
+/* line 985, ../scss/main.scss */
+.container_2by3 {
+  width: calc(100% - 33.3333%);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* line 990, ../scss/main.scss */
+.container_1by3 .mdl-textfield {
+  width: 100%;
+}
+
+/* line 993, ../scss/main.scss */
 .twoColContainer .mdl-textfield {
   width: 100%;
   padding: 20px 0px 10px 0px;
 }
 
-/* line 979, ../scss/main.scss */
+/* line 997, ../scss/main.scss */
 .singleColContainer {
   width: 100%;
   flex-wrap: wrap;
 }
 
-/* line 983, ../scss/main.scss */
+/* line 1001, ../scss/main.scss */
 .singleColContainer > div {
   width: 100%;
   margin-bottom: 5px;
 }
 
-/* line 987, ../scss/main.scss */
+/* line 1005, ../scss/main.scss */
 .singleColContainer .mdl-textfield {
   width: 100%;
   padding: 20px 0px 10px 0px;
 }
 
-/* line 991, ../scss/main.scss */
+/* line 1009, ../scss/main.scss */
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
   top: 0px;
 }
 
-/* line 994, ../scss/main.scss */
+/* line 1012, ../scss/main.scss */
 .customerSuggestionList {
   width: 100%;
   border-top: 3px solid #393b68;
   padding: 4px;
 }
 
-/* line 999, ../scss/main.scss */
+/* line 1017, ../scss/main.scss */
 .customerSuggestionList ul {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 1003, ../scss/main.scss */
+/* line 1021, ../scss/main.scss */
 .customerSuggestionList ul li {
   width: 100%;
   margin: 0px;
   list-style: none;
 }
 
-/* line 1008, ../scss/main.scss */
+/* line 1026, ../scss/main.scss */
 .customerSuggestionList .mdl-button {
   background-color: #25274b;
   width: 100%;
@@ -1816,26 +1843,26 @@ button, button:hover, button:focus {
   box-shadow: none;
 }
 
-/* line 1018, ../scss/main.scss */
+/* line 1036, ../scss/main.scss */
 .singleColContainer .mdl-checkbox {
   cursor: pointer;
 }
 
-/* line 1021, ../scss/main.scss */
+/* line 1039, ../scss/main.scss */
 .addonList {
   padding: 0px;
   margin: 0px;
   list-style: none;
 }
 
-/* line 1026, ../scss/main.scss */
+/* line 1044, ../scss/main.scss */
 .addonList li {
   padding: 5px 10px;
   background-color: #25274b;
   margin-bottom: 5px;
 }
 
-/* line 1031, ../scss/main.scss */
+/* line 1049, ../scss/main.scss */
 .popBtnHolder {
   padding: 10px;
   border-top: 3px solid #393b68;
@@ -1843,7 +1870,7 @@ button, button:hover, button:focus {
   align-items: center;
 }
 
-/* line 1037, ../scss/main.scss */
+/* line 1055, ../scss/main.scss */
 .qRound .mdl-button {
   border-radius: 30px;
   background-color: #2ecc71;
@@ -1854,52 +1881,57 @@ button, button:hover, button:focus {
   margin-left: 15px;
 }
 
-/* line 1046, ../scss/main.scss */
+/* line 1064, ../scss/main.scss */
 .qRound .inactBtn {
   background-color: #4c4e7f;
 }
 
-/* line 1049, ../scss/main.scss */
+/* line 1067, ../scss/main.scss */
+.qRound .dangerBtn {
+  background-color: #e84c3d;
+}
+
+/* line 1070, ../scss/main.scss */
 .popTable {
   width: 100%;
   border-top: 3px solid #393b68;
   padding: 4px;
 }
 
-/* line 1054, ../scss/main.scss */
+/* line 1075, ../scss/main.scss */
 .popTable table {
   width: 100%;
   background-color: #25284b;
   color: #fff;
 }
 
-/* line 1059, ../scss/main.scss */
+/* line 1080, ../scss/main.scss */
 .popTable .mdl-data-table th {
   color: #9d9fd2 !important;
 }
 
-/* line 1062, ../scss/main.scss */
+/* line 1083, ../scss/main.scss */
 .mdl-data-table tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 1065, ../scss/main.scss */
+/* line 1086, ../scss/main.scss */
 .mdl-data-table tbody tr.is-selected {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 1068, ../scss/main.scss */
+/* line 1089, ../scss/main.scss */
 .twoColContainer > div.columnMerge {
   width: 100%;
 }
 
-/* line 1071, ../scss/main.scss */
+/* line 1092, ../scss/main.scss */
 .KotPop {
   padding: 5px;
   background-color: #e4e3e9;
 }
 
-/* line 1075, ../scss/main.scss */
+/* line 1096, ../scss/main.scss */
 .KotItemBox {
   width: 100%;
   flex-wrap: wrap;
@@ -1907,51 +1939,51 @@ button, button:hover, button:focus {
   font-size: 15px;
 }
 
-/* line 1081, ../scss/main.scss */
+/* line 1102, ../scss/main.scss */
 .KotItemBox .KotItemName {
   width: 65%;
 }
 
-/* line 1084, ../scss/main.scss */
+/* line 1105, ../scss/main.scss */
 .KotItemBox .KotItemQty {
   width: 35%;
   text-align: right;
 }
 
-/* line 1088, ../scss/main.scss */
+/* line 1109, ../scss/main.scss */
 .kotName {
   padding: 5px 10px;
   background-color: #c1bdd8;
   color: #383b68;
 }
 
-/* line 1093, ../scss/main.scss */
+/* line 1114, ../scss/main.scss */
 .kotName .mdl-checkbox__label {
   color: #383b68;
 }
 
-/* line 1096, ../scss/main.scss */
+/* line 1117, ../scss/main.scss */
 .KotOuter {
   padding-bottom: 15px;
 }
 
-/* line 1099, ../scss/main.scss */
+/* line 1120, ../scss/main.scss */
 .alignLeft {
   margin-right: auto;
 }
 
-/* line 1102, ../scss/main.scss */
+/* line 1123, ../scss/main.scss */
 .taxInfoTab th, .taxInfoTab td {
   text-align: center;
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 1106, ../scss/main.scss */
+  /* line 1127, ../scss/main.scss */
   .menuItem:nth-child(6n) {
     margin-right: 2%;
   }
 
-  /* line 1109, ../scss/main.scss */
+  /* line 1130, ../scss/main.scss */
   .modal-content-small {
     background-color: #2c2e55;
     margin: 5% auto;

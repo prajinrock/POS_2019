@@ -886,10 +886,6 @@ button, button:hover, button:focus{
 }
 
 /* Modal Content/Box */
-.popBox_small {
-  width:20%;
-}
-
 .modal-content-small {
   background-color: #2c2e55;
   margin: 10% auto; /* 15% from the top and centered */
@@ -941,6 +937,13 @@ button, button:hover, button:focus{
 	color: #9d9ed4;
 	margin-bottom: 5px;
 }
+.buttonWide .mdl-button{
+	width: 100%;
+	background-color: #25284b;
+	color: #9d9ed4;
+	margin-bottom: 5px;
+	text-align: left;
+}
 .mdl-textfield option{
 	color: #25284b;
 }
@@ -971,6 +974,21 @@ button, button:hover, button:focus{
 .twoColContainer > div {
 	width: calc(50% - 20px);
 	margin:0px 10px;
+}
+.threeColContainer{
+	width: 100%;
+	flex-wrap: wrap;
+}
+.container_1by3{
+	width: 33.3333%;
+}
+.container_2by3{
+	width: calc(100% - 33.3333%);
+	padding: 10px;
+	box-sizing:border-box;
+}
+.container_1by3 .mdl-textfield{
+	width: 100%;
 }
 .twoColContainer .mdl-textfield{
 	width: 100%;
@@ -1045,6 +1063,9 @@ button, button:hover, button:focus{
 }
 .qRound .inactBtn{
 	background-color: #4c4e7f;
+}
+.qRound .dangerBtn{
+	background-color: #e84c3d;
 }
 .popTable{
 	width: 100%;
