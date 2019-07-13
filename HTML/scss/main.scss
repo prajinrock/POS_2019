@@ -30,7 +30,7 @@ button, button:hover, button:focus{
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $transWhite20;
+  background: $fontColorLite;
   transition: all .3s;
 }
 
@@ -55,6 +55,25 @@ button, button:hover, button:focus{
 	height: 5.8%;
 	align-items: center;
 }
+.flexBox{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+}
+.menuPin{
+	width: 50px;
+	height: 100%;
+	background-color: $transBlack50;
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+	box-sizing: border-box;
+	color: #fff;
+	font-size:24px;
+	justify-content: center;
+	align-items: center;
+}
 .clientName{
 	background-color: $transBlack30;
 	min-width: 7%;
@@ -69,19 +88,9 @@ button, button:hover, button:focus{
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}
-.flexBox{
-	display: flex;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-}
-.menuPin{
-	width: 50px;
-	height: 100%;
-	background-color: $transBlack50;
-	position: relative;
-	cursor: pointer;
+	@media screen and (max-width: 768px){
+		min-width: 34%;
+	}
 }
 .posSelectBtnHome{
 	height: 100%;
@@ -103,12 +112,21 @@ button, button:hover, button:focus{
 	padding: 7px 10px 5px 10px;
 	border-radius: 6px;
 	margin-left: auto;
+	@media screen and (max-width: 768px){
+		display: none;
+	}
 }
 .lastBillDetails{
 	color: $fontColorLite;
 	font-size: 14px;
 	font-family: $appFont;
 	text-transform: uppercase;
+	@media screen and (max-width: 1024px){
+		display: none;
+	}
+	@media screen and (max-width: 768px){
+		display: none;
+	}
 }
 .lastBillDetails > span{
 	padding-left:10px;
@@ -116,10 +134,20 @@ button, button:hover, button:focus{
 .barCodeSearch{
 	margin-left: 20px;
 	margin-right: 20px;
+	font-size: 14px;
+	@media screen and (max-width: 768px){
+		display: none;
+	}
+}
+.barCodeSearch .mdl-checkbox__label{
+	font-size: 14px;
 }
 .itemSearchBox{
 	height: 100%;
 	background-color: $transBlack20;
+	@media screen and (max-width: 768px){
+		display: none;
+	}
 }
 .itemSearch{
 	width: 110px;
@@ -154,6 +182,9 @@ button, button:hover, button:focus{
 	overflow: hidden;
 	border: 2px solid $transBlack50;
 	margin-left: 10px;
+	@media screen and (max-width: 768px){
+		margin-left: 0px;
+	}
 }
 .userPhoto > img{
 	width: 100%;
@@ -174,6 +205,9 @@ button, button:hover, button:focus{
 	padding-top: 3px;
 	color: $whitecolor;
 	font-size: 14px;
+	@media screen and (max-width: 768px){
+		display: none;
+	}
 }
 .userMenu{
 	background-color: $menuColor;
@@ -206,6 +240,12 @@ button, button:hover, button:focus{
 	height: 80vh;
 	position: relative;
 }
+.actionContentArea{
+	width: 100%;
+	height: calc(100vh - 5.8%);
+	position: relative;
+	align-items: flex-start;
+}
 .billPreviewSection{
 	background-color: $liteGrey;
 	// border-bottom: 7px solid transparent;
@@ -227,6 +267,10 @@ button, button:hover, button:focus{
 	width: 100%;
 	height: 14.2%;
 	// background-color: #333;
+	@media screen and (max-width: 768px){
+		flex-direction: column;
+		padding:10px 5px;
+	}
 }
 .categorySection{
 	width: 100%;
@@ -327,6 +371,9 @@ button, button:hover, button:focus{
 	justify-content: space-between;
 	box-sizing: border-box;
 	padding: 15px;
+	@media screen and (max-width: 768px){
+		width: 100%;
+	}
 }
 .clubbedBtn{
 	width: 30%;
@@ -375,6 +422,9 @@ button, button:hover, button:focus{
 .tablePreview{
 	width: 68%;
 	position: relative;
+	@media screen and (max-width: 768px){
+		width: 100%;
+	}
 }
 .tableItem{
 	width: 90px;
@@ -438,16 +488,23 @@ button, button:hover, button:focus{
 	top: -35px;
 	left: 45%;
 	cursor: pointer;
+	@media screen and (max-width: 768px){
+		left: 38%;
+		top: -48px;
+	}
 }
 .drawyerBtn.pushDown{
 	background-image:url(../images/drawyer_close.png);
 }
 .itemList{
 	width: 100%;
-	max-height: 80%;
+	max-height: 66%;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	overflow: auto;
+	@media screen and (max-width: 768px){
+		max-height: max-content;	
+	}
 }
 .menuItem{
 	width: 15%;
@@ -459,15 +516,25 @@ button, button:hover, button:focus{
 	overflow: hidden;
 	box-shadow: 0px 0px 4px $transBlack30;
 	min-width: 185px;
+	@media screen and (max-width: 768px){
+		height: auto;
+		min-width: initial;
+		width: calc(50% - 14px);
+		margin-right: 10px;
+		margin-top: 5px;
+	}
 
 }
-.menuItem:nth-child(6n){
-	margin-right: 0px;
-}
+// .menuItem:nth-child(6n){
+// 	margin-right: 0px;
+// }
 .itemImageHolder{
 	width: 100%;
 	height: 135px;
 	overflow: hidden;
+	@media screen and (max-width: 768px){
+		display: none;
+	}
 }
 .itemImageHolder > img{
 	width: 100%;
@@ -649,6 +716,9 @@ button, button:hover, button:focus{
     background-color: $bgColor;
     height: 82%;
     box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+    @media screen and (max-width: 768px){
+		width: 100%;
+	}
 }
 .tableOut > .tableDrawyer{
 	height: auto;
@@ -707,6 +777,9 @@ button, button:hover, button:focus{
 	width: 100%;
 	height: 100vh;
 	background-color: $menuColor;
+	@media screen and (max-width: 768px){
+		flex-direction: column;
+	}
 }
 .companyDetails{
 	width: 50%;
@@ -714,16 +787,54 @@ button, button:hover, button:focus{
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	@media screen and (max-width: 768px){
+		width: 100%;
+		height: 15%;
+	}
+}
+.loginBtn{
+	@media screen and (max-width: 768px){
+		height: 44px;
+	}
 }
 .loginSection{
 	width: 50%;
 	height: 100%;
-}
-.loginSection{
 	background-color: #23254b;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	@media screen and (max-width: 768px){
+		width: 100%;
+		height: 85%;
+		justify-content: flex-start;
+		padding-top: 25px;
+	}
+}
+.locationHolder{
+	
+	@media screen and (max-width: 768px){
+		flex-wrap: wrap;
+		padding: 25px;
+		width: 100%;
+	}
+}
+.mobCopy{
+	background-color: #2c2e56;
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 34px;
+	font-size: 12px;
+	color: $fontColor;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 12px;
+	@media screen and (max-width: 768px){
+		display: block;
+	
+	}
 }
 .locationTitle{
 	font-size: 24px;
@@ -750,6 +861,9 @@ button, button:hover, button:focus{
 	box-shadow: 0px 0px 4px $transBlack30;
 	margin:10px;
 	cursor: pointer;
+	@media screen and (max-width: 768px){
+		width: calc(33.3333% - 20px);
+	}
 }
 .locationHolder button:hover{
 	border: 1px solid #2ac1f3;
@@ -757,6 +871,9 @@ button, button:hover, button:focus{
 }
 .companyLogo{
 	width: 27%;
+	@media screen and (max-width: 768px){
+		width: 40%;
+	}
 }
 .companyLogo > img{
 	width: 100%;
@@ -768,9 +885,15 @@ button, button:hover, button:focus{
 	font-size: 15px;
 	line-height: 1.5;
 	margin-top:20px;
+	@media screen and (max-width: 768px){
+		display: none;
+	}
 }
 .companyBtn{
 	margin-top: 15px;
+	@media screen and (max-width: 768px){
+		display: none;
+	}
 }
 .companyBtn button{
 	background-color: #65678e;
@@ -782,6 +905,12 @@ button, button:hover, button:focus{
 }
 .loginForm{
 	width: 40%;
+	@media screen and (max-width: 1024px){
+		width: 60%;
+	}
+	@media screen and (max-width: 768px){
+		width: 80%;
+	}
 }
 .mdl-textfield{
 	width: 100%;
@@ -839,7 +968,8 @@ button, button:hover, button:focus{
 	height: 100%;
 	background-color: #1e1f3e;
 	position: absolute;
-	@media screen and (max-width: 1366px){
+	display: none;
+	@media screen and (max-width: 768px){
 		
 	}
 }
@@ -883,6 +1013,7 @@ button, button:hover, button:focus{
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  color: #9c9fd1;
 }
 
 /* Modal Content/Box */
@@ -982,10 +1113,45 @@ button, button:hover, button:focus{
 .container_1by3{
 	width: 33.3333%;
 }
-.container_2by3{
+.container_2by3
+{
 	width: calc(100% - 33.3333%);
 	padding: 10px;
 	box-sizing:border-box;
+}
+.container_3by3{
+	width: 100%;
+	padding: 10px;
+	box-sizing:border-box;
+}
+.container_3by3 .mdl-layout__container{
+	position: relative;
+}
+.container_3by3 .mdl-tabs__tab-bar{
+	background-color: #393b68;
+	color: #9c9fd1;
+	border-bottom:1px solid rgba(0,0,0,.3);
+}
+.container_3by3 .mdl-tabs.is-upgraded .mdl-tabs__tab:nth-child(1).is-active:after{
+		background:#9c9fd1;
+}
+.container_3by3 .mdl-tabs.is-upgraded .mdl-tabs__tab:nth-child(2).is-active:after{
+		background:#4ca64f;
+}
+.container_3by3 .mdl-tabs.is-upgraded .mdl-tabs__tab:nth-child(3).is-active:after{
+		background:#d25d5a;
+}
+.container_3by3 .mdl-tabs.is-upgraded .mdl-tabs__tab:nth-child(4).is-active:after{
+		background:#ff9811;
+}
+.container_3by3 .mdl-tabs__tab{
+		color: #9c9fd1;
+}
+.container_3by3 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active{
+	color: #fff;
+}
+.container_3by3 .mdl-tabs.is-upgraded .mdl-tabs__panel.is-active{
+	background-color: #343662;
 }
 .container_1by3 .mdl-textfield{
 	width: 100%;
@@ -1123,6 +1289,102 @@ button, button:hover, button:focus{
 .taxInfoTab th, .taxInfoTab td{
 	text-align: center;
 }
+.redTitle{
+	width: 100%;
+	background-color: rgba(0,0,0,.3);
+	color: #d25d5a;
+	margin:0px;
+	font-size: 19px;
+	font-family: $appFont;
+	text-align: center;
+	padding-top: 5px;
+	height: 44px;
+}
+.greenTitle{
+	width: 100%;
+	background-color: rgba(0,0,0,.3);
+	color: #4ca64f;
+	margin:0px;
+	font-size: 19px;
+	font-family: $appFont;
+	text-align: center;
+	padding-top: 5px;
+	height: 44px;
+}
+.defaultTitle{
+	width: 100%;
+	background-color: rgba(0,0,0,.3);
+	color: $fontColor;
+	margin:0px;
+	font-size: 19px;
+	font-family: $appFont;
+	text-align: center;
+	padding-top: 5px;
+	height: 44px;
+}
+.labelNote{
+	font-size: 13px;
+	color: $fontColor;
+}
+.labelHigh{
+	font-size: 15px;
+	color: #4cd137;
+}
+.tableTwoCol{
+	width: 100%;
+}
+.tableTwoCol > div{
+	width: 50%;
+	box-sizing: border-box;
+}
+.tableTwoCol > div:nth-child(1){
+	border-right: 3px solid #393b68;
+}
+.tableChangeContents{
+	padding:5px;
+	flex-wrap: wrap;
+}
+.tableChangeContents .tableItem{
+	margin:6px 3px;
+}
+.keypadLine{
+	width: 100%;
+}
+.keypadLine{
+	margin-top: 10px;
+	justify-content: flex-start;
+}
+.keypadLine .mdl-button{
+	height: 40px;
+	width: 40px;
+	background-color: #393b68;
+	color: #9c9fd1;
+	font-size: 18px;
+}
+.crumbMenu{
+	width: 100%;
+	background-color: #30325d;
+	justify-content: flex-start;
+}
+.menuBack{
+	display: block;
+	font-size: 16px;
+	color: #767ab5;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+	padding:10px 20px;
+	font-weight: 400;
+}
+.menuBack i{
+	padding-right: 15px;
+	font-size: 18px;
+}
+.crumbLabel{
+	padding:10px 20px;
+	display: block;
+	font-size: 16px;
+}
 @media only screen and (max-width: 1366px) {
   .menuItem:nth-child(6n){
   	margin-right: 2%;
@@ -1135,3 +1397,5 @@ button, button:hover, button:focus{
 	  border-radius: 10px;
 	}
 }
+
+
