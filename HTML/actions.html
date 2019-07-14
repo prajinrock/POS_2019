@@ -25,14 +25,6 @@
 		$("#userClick").click(function(){
 			$(".userMenu").toggle();
 		});
-		$(".panel-left").resizable({
-			handleSelector: ".splitter",
-			resizeHeight: false
-		});
-		$(".panel-top").resizable({
-			handleSelector: ".splitter-horizontal",
-			resizeWidth: false
-		});
 		$(".drawyerBtn").click(function(){
 			$(".drawyerBtn").toggleClass('pushDown');
 			$(".tablePreview").toggleClass('tableOut', 1000);
@@ -154,9 +146,36 @@ function clockUpdate() {
 			</div>
 			<div class="crumbMenu flexBox">
 				<a href="#" class="menuBack"><i class="fa fa-angle-left" aria-hidden="true"></i> Home</a>
-				<label class="crumbLabel">VOID KOT</label>
+				<a class="crumbLabel"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> VOID KOT</a>
 			</div>
-			<div class="pageTitle"></div>
+			<div class="pageTitle">Select Table</div>
+			<div class="actionContainer flexBox">
+				<div class="actionTableHolder flexBox">
+					<div class="tableItem flexBox">
+						<div class="tableIcon settleItem"></div>
+						<label>Table 01</label>
+					</div>
+					<div class="tableItem flexBox">
+						<div class="tableIcon settleItem"></div>
+						<label>Table 01</label>
+					</div>
+					<div class="tableItem flexBox">
+						<div class="tableIcon settleItem"></div>
+						<label>Table 01</label>
+					</div>
+					<div class="tableItem flexBox">
+						<div class="tableIcon settleItem"></div>
+						<label>Table 01</label>
+					</div>
+					<div class="tableItem flexBox">
+						<div class="tableIcon settleItem"></div>
+						<label>Table 01</label>
+					</div>
+				</div>
+				<div class="mainActionBox">
+					Different Actions goes here.
+				</div>
+			</div>
 		</div>
 		
 	</div>
